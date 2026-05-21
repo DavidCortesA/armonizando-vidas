@@ -1,0 +1,131 @@
+{
+  "language": {
+    "label": "Language",
+    "es": "ES",
+    "en": "EN"
+  },
+  "brand": {
+    "main": "Armonizando Vidas",
+    "mainSubtitle": "A.B.P.",
+    "foodBank": "Food Bank",
+    "orchestra": "Orquestas del Rey",
+    "parent": "Armonizando Vidas"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "programs": "Programs",
+    "donate": "Donate",
+    "volunteer": "Volunteer",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "foodBank": "Food Bank",
+    "orchestra": "Orquestas del Rey",
+    "events": "Events",
+    "backHome": "Armonizando Vidas",
+    "support": "Support",
+    "donateNow": "Donate now",
+    "menu": "Menu",
+    "makeDonation": "Make a donation"
+  },
+  "seo": {
+    "homeTitle": "Home",
+    "homeDescription": "Armonizando Vidas A.B.P. is a nonprofit association transforming communities through the Food Bank and Orquestas del Rey. Donate, volunteer, and join us."
+  },
+  "hero": {
+    "badge": "Nonprofit civil association",
+    "title": "Transforming lives,",
+    "titleAccent": "building communities",
+    "subtitleStart": "We are an organization that brings together the power of",
+    "food": "food",
+    "music": "music",
+    "subtitleEnd": "to create real social impact in our community.",
+    "ctaDonate": "Make a donation",
+    "ctaLearn": "Learn more",
+    "stats": {
+      "families": "Families monthly",
+      "food": "Food rescued",
+      "musicians": "Musicians trained",
+      "years": "Years of impact"
+    }
+  },
+  "mission": {
+    "badge": "Our Mission",
+    "title": "We believe in the power of",
+    "titleAccent": "community",
+    "text1": "Armonizando Vidas was born from the conviction that every person deserves dignity, food, and the opportunity to develop their talents. We work every day to make that vision real.",
+    "text2": "Our organization combines high-impact social programs with transformative cultural initiatives, creating a community wellbeing ecosystem that goes beyond immediate aid.",
+    "values": {
+      "dignity": { "title": "Dignity", "desc": "We treat every person with the respect and dignity they deserve, regardless of their situation." },
+      "community": { "title": "Community", "desc": "We build ties that strengthen the social fabric and create lasting support networks." },
+      "excellence": { "title": "Excellence", "desc": "We do everything with the highest standard, from food delivery to musical training." },
+      "hope": { "title": "Hope", "desc": "We believe in every human being's potential and work so they can discover it." }
+    }
+  },
+  "programs": {
+    "badge": "Our Programs",
+    "title": "Two programs,",
+    "titleAccent": "one heart",
+    "subtitle": "Each program has its own identity, but they share the same purpose: transforming lives through dignity, art, and solidarity.",
+    "foodBank": {
+      "tag": "Social Program",
+      "title": "Food Bank",
+      "description": "We rescue and distribute food for families in vulnerable situations, fighting hunger and strengthening food security in our community.",
+      "cta": "Learn about the program",
+      "stats": ["Families / month", "Food rescued", "Communities"]
+    },
+    "orchestra": {
+      "tag": "Cultural Program",
+      "title": "Orquestas del Rey",
+      "description": "We train musicians from childhood, using the orchestra as a tool for social transformation and integral human development through art and excellence.",
+      "cta": "Learn about the program",
+      "stats": ["Active musicians", "Ensembles", "Concerts / year"]
+    }
+  },
+  "stats": {
+    "badge": "Our Impact",
+    "title": "Numbers that",
+    "titleAccent": "speak for themselves",
+    "subtitle": "Every number represents a family, a life, a story of real transformation.",
+    "families": "Families supported",
+    "familiesSub": "every month",
+    "food": "Tons of food",
+    "foodSub": "distributed monthly",
+    "musicians": "Musicians trained",
+    "musiciansSub": "in active programs",
+    "years": "Years of impact",
+    "yearsSub": "transforming lives",
+    "communities": "Communities",
+    "communitiesSub": "actively supported",
+    "ensembles": "Musical ensembles",
+    "ensemblesSub": "in ongoing training"
+  },
+  "cta": {
+    "donate": {
+      "title": "Your support changes",
+      "titleAccent": "real lives",
+      "subtitle": "With your donation, we keep running the programs that transform entire communities. Every peso counts.",
+      "btn": "Donate now"
+    },
+    "volunteer": {
+      "title": "Join as a",
+      "titleAccent": "volunteer",
+      "subtitle": "Your time and talent are the engine that makes our mission possible. There is a place for you on our team.",
+      "btn": "I want to volunteer"
+    }
+  },
+  "footer": {
+    "description": "Nonprofit civil association committed to social transformation through food, music, and community.",
+    "programs": "Programs",
+    "organization": "Organization",
+    "contact": "Contact",
+    "foodPrograms": "Food Programs",
+    "events": "Events and Concerts",
+    "musicGallery": "Music Gallery",
+    "about": "About Us",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "transparency": "Transparency"
+  }
+}

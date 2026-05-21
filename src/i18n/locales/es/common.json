@@ -1,0 +1,131 @@
+{
+  "language": {
+    "label": "Idioma",
+    "es": "ES",
+    "en": "EN"
+  },
+  "brand": {
+    "main": "Armonizando Vidas",
+    "mainSubtitle": "A.B.P.",
+    "foodBank": "Banco de Alimentos",
+    "orchestra": "Orquestas del Rey",
+    "parent": "Armonizando Vidas"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "programs": "Programas",
+    "donate": "Donar",
+    "volunteer": "Voluntariado",
+    "gallery": "Galería",
+    "contact": "Contacto",
+    "foodBank": "Banco de Alimentos",
+    "orchestra": "Orquestas del Rey",
+    "events": "Eventos",
+    "backHome": "Armonizando Vidas",
+    "support": "Apoyar",
+    "donateNow": "Donar ahora",
+    "menu": "Menú",
+    "makeDonation": "Hacer una donación"
+  },
+  "seo": {
+    "homeTitle": "Inicio",
+    "homeDescription": "Armonizando Vidas A.B.P. es una asociación civil que transforma comunidades a través del Banco de Alimentos y Orquestas del Rey. Dona, sé voluntario y únete."
+  },
+  "hero": {
+    "badge": "Asociación Civil sin fines de lucro",
+    "title": "Transformando vidas,",
+    "titleAccent": "construyendo comunidades",
+    "subtitleStart": "Somos una organización que une el poder del",
+    "food": "alimento",
+    "music": "música",
+    "subtitleEnd": "para crear impacto social real en nuestra comunidad.",
+    "ctaDonate": "Hacer una donación",
+    "ctaLearn": "Conocer más",
+    "stats": {
+      "families": "Familias al mes",
+      "food": "Alimento rescatado",
+      "musicians": "Músicos formados",
+      "years": "Años de impacto"
+    }
+  },
+  "mission": {
+    "badge": "Nuestra Misión",
+    "title": "Creemos en el poder de la",
+    "titleAccent": "comunidad",
+    "text1": "Armonizando Vidas nació de la convicción de que toda persona merece dignidad, alimento y la oportunidad de desarrollar sus talentos. Trabajamos cada día para hacer esa visión realidad.",
+    "text2": "Nuestra organización fusiona programas sociales de alto impacto con iniciativas culturales transformadoras, creando un ecosistema de bienestar comunitario que va más allá de la ayuda inmediata.",
+    "values": {
+      "dignity": { "title": "Dignidad", "desc": "Tratamos a cada persona con el respeto y la dignidad que merece, sin importar su situación." },
+      "community": { "title": "Comunidad", "desc": "Construimos lazos que fortalecen el tejido social y crean redes de apoyo duraderas." },
+      "excellence": { "title": "Excelencia", "desc": "Hacemos cada cosa con el más alto estándar, desde la entrega de alimentos hasta la formación musical." },
+      "hope": { "title": "Esperanza", "desc": "Creemos en el potencial de cada ser humano y trabajamos para que lo descubra." }
+    }
+  },
+  "programs": {
+    "badge": "Nuestros Programas",
+    "title": "Dos programas,",
+    "titleAccent": "un mismo corazón",
+    "subtitle": "Cada programa tiene su propia identidad, pero comparten el mismo propósito: transformar vidas a través de la dignidad, el arte y la solidaridad.",
+    "foodBank": {
+      "tag": "Programa Social",
+      "title": "Banco de Alimentos",
+      "description": "Rescatamos y distribuimos alimentos para familias en situación de vulnerabilidad, combatiendo el hambre y fortaleciendo la seguridad alimentaria en nuestra comunidad.",
+      "cta": "Conocer el programa",
+      "stats": ["Familias / mes", "Alimento rescatado", "Comunidades"]
+    },
+    "orchestra": {
+      "tag": "Programa Cultural",
+      "title": "Orquestas del Rey",
+      "description": "Formamos músicos desde la infancia, usando la orquesta como herramienta de transformación social y desarrollo humano integral a través del arte y la excelencia.",
+      "cta": "Conocer el programa",
+      "stats": ["Músicos activos", "Ensambles", "Conciertos / año"]
+    }
+  },
+  "stats": {
+    "badge": "Nuestro Impacto",
+    "title": "Números que",
+    "titleAccent": "hablan por sí solos",
+    "subtitle": "Cada cifra representa una familia, una vida, una historia de transformación real.",
+    "families": "Familias beneficiadas",
+    "familiesSub": "cada mes",
+    "food": "Toneladas de alimento",
+    "foodSub": "distribuidas mensualmente",
+    "musicians": "Músicos formados",
+    "musiciansSub": "en programas activos",
+    "years": "Años de impacto",
+    "yearsSub": "transformando vidas",
+    "communities": "Comunidades",
+    "communitiesSub": "activamente apoyadas",
+    "ensembles": "Ensambles musicales",
+    "ensemblesSub": "en formación continua"
+  },
+  "cta": {
+    "donate": {
+      "title": "Tu apoyo cambia",
+      "titleAccent": "vidas reales",
+      "subtitle": "Con tu donación, seguimos operando los programas que transforman comunidades enteras. Cada peso cuenta.",
+      "btn": "Donar ahora"
+    },
+    "volunteer": {
+      "title": "Únete como",
+      "titleAccent": "voluntario",
+      "subtitle": "Tu tiempo y talento son el motor que hace posible nuestra misión. Hay un lugar para ti en nuestro equipo.",
+      "btn": "Quiero ser voluntario"
+    }
+  },
+  "footer": {
+    "description": "Asociación civil sin fines de lucro comprometida con la transformación social a través del alimento, la música y la comunidad.",
+    "programs": "Programas",
+    "organization": "Organización",
+    "contact": "Contacto",
+    "foodPrograms": "Programas Alimentarios",
+    "events": "Eventos y Conciertos",
+    "musicGallery": "Galería Musical",
+    "about": "Quiénes Somos",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "transparency": "Transparencia"
+  }
+}
