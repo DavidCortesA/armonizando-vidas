@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, Users, Award, Target } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import SEOHead from '../components/common/SEOHead';
 import RevealOnScroll from '../components/common/RevealOnScroll';
 import SectionBadge from '../components/common/SectionBadge';
@@ -8,29 +9,25 @@ import AnimatedCounter from '../components/common/AnimatedCounter';
 import ImageStoryBand from '../components/common/ImageStoryBand';
 import { PATHS } from '../routes/paths';
 
-const milestones = [
-  { year: '2019', title: 'Fundación', desc: 'Armonizando Vidas nace con una misión clara: transformar vidas desde las bases.' },
-  { year: '2020', title: 'Banco de Alimentos', desc: 'Lanzamos el programa de Banco de Alimentos en plena pandemia, llegando a 100 familias.' },
-  { year: '2021', title: 'Expansión comunitaria', desc: 'Crecemos a 5 comunidades y triplicamos el número de familias beneficiadas.' },
-  { year: '2022', title: 'Orquestas del Rey', desc: 'Nace el programa musical con 40 niños y jóvenes en su primera generación.' },
-  { year: '2023', title: 'Reconocimiento oficial', desc: 'Obtenemos registro como A.B.P. y reconocimientos por nuestro impacto social.' },
-  { year: '2024', title: 'Escala nacional', desc: 'Superamos 500 familias mensuales y 150 músicos activos en 6 ensambles.' },
-];
-
-const team = [
-  { name: 'Fundadora & Directora', initials: 'AV', color: '#33FF00', desc: 'Visionaria y corazón del movimiento.' },
-  { name: 'Director Banco Alimentos', initials: 'DA', color: '#F59E0B', desc: 'Coordinando operaciones y logística.' },
-  { name: 'Director Musical', initials: 'DM', color: '#A78BFA', desc: 'Formando músicos y transformando vidas.' },
-  { name: 'Coordinadora Voluntarios', initials: 'CV', color: '#FF00CC', desc: 'Construyendo comunidad y liderazgo.' },
+const teamMeta = [
+  { initials: 'AV', color: '#33FF00' },
+  { initials: 'DA', color: '#F59E0B' },
+  { initials: 'DM', color: '#A78BFA' },
+  { initials: 'CV', color: '#FF00CC' },
 ];
 
 export default function About() {
+  const { t } = useTranslation();
+
+  const milestones = t('about.timeline.milestones', { returnObjects: true }) as Array<{ year: string; title: string; desc: string }>;
+  const teamMembers = t('about.team.members', { returnObjects: true }) as Array<{ role: string; desc: string }>;
+  const team = teamMeta.map((meta, i) => ({ ...meta, ...teamMembers[i] }));
+
   return (
     <>
       <SEOHead
-        title="Nosotros"
-        description="Conoce la historia, misión, visión y equipo de Armonizando Vidas A.B.P. Una organización comprometida con el impacto social real."
-        keywords="sobre nosotros, armonizando vidas, asociación civil, historia, equipo, misión, visión"
+        title={t('about.seo.title')}
+        description={t('about.seo.description')}
       />
 
       {/* HERO */}
@@ -42,14 +39,13 @@ export default function About() {
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <SectionBadge color="lime" className="mb-5">Quiénes Somos</SectionBadge>
+            <SectionBadge color="lime" className="mb-5">{t('about.hero.badge')}</SectionBadge>
             <h1 className="text-5xl sm:text-6xl font-extrabold text-white mb-6">
-              Una organización con{' '}
-              <span className="gradient-text-lime">propósito real</span>
+              {t('about.hero.title')}{' '}
+              <span className="gradient-text-lime">{t('about.hero.titleAccent')}</span>
             </h1>
             <p className="text-white/65 text-xl max-w-2xl mx-auto leading-relaxed">
-              Somos Armonizando Vidas A.B.P., una asociación civil que cree en el poder
-              transformador del alimento, la música y la comunidad.
+              {t('about.hero.subtitle')}
             </p>
           </motion.div>
         </div>
@@ -57,17 +53,13 @@ export default function About() {
       </section>
 
       <ImageStoryBand
-        badge="Lo que nos mueve"
-        title="Acompañamos procesos,"
-        accent="no solo momentos"
-        description="Nuestro trabajo empieza con una necesidad concreta, pero crece cuando una familia encuentra una red, un niño descubre una disciplina artística y una comunidad vuelve a sentirse acompañada."
+        badge={t('about.storyBand.badge')}
+        title={t('about.storyBand.title')}
+        accent={t('about.storyBand.accent')}
+        description={t('about.storyBand.description')}
         image="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1200&q=80"
-        imageAlt="Voluntarios trabajando juntos en una jornada comunitaria"
-        items={[
-          'Diseñamos programas que combinan ayuda inmediata con seguimiento humano.',
-          'Cada alianza, donativo y hora de voluntariado se integra a una estrategia de impacto.',
-          'Medimos resultados para crecer con responsabilidad y servir mejor a cada comunidad.',
-        ]}
+        imageAlt={t('about.storyBand.imageAlt')}
+        items={t('about.storyBand.items', { returnObjects: true }) as string[]}
       />
 
       {/* STATS */}
@@ -75,18 +67,18 @@ export default function About() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             {[
-              { icon: Heart, value: 500, suffix: '+', label: 'Familias/mes', color: '#F59E0B' },
-              { icon: Users, value: 150, suffix: '+', label: 'Músicos', color: '#A78BFA' },
-              { icon: Award, value: 5, suffix: '+', label: 'Años', color: '#33FF00' },
-              { icon: Target, value: 10, suffix: '', label: 'Comunidades', color: '#38BDF8' },
-            ].map(({ icon: Icon, value, suffix, label, color }, i) => (
-              <RevealOnScroll key={label} delay={i * 0.1}>
+              { icon: Heart, value: 500, suffix: '+', labelKey: 'about.stats.families', color: '#F59E0B' },
+              { icon: Users, value: 150, suffix: '+', labelKey: 'about.stats.musicians', color: '#A78BFA' },
+              { icon: Award, value: 5, suffix: '+', labelKey: 'about.stats.years', color: '#33FF00' },
+              { icon: Target, value: 10, suffix: '', labelKey: 'about.stats.communities', color: '#38BDF8' },
+            ].map(({ icon: Icon, value, suffix, labelKey, color }, i) => (
+              <RevealOnScroll key={labelKey} delay={i * 0.1}>
                 <div className="text-center p-6 rounded-2xl bg-[#F8F9FC] border border-[#E2E8F0]">
                   <Icon size={24} className="mx-auto mb-3" style={{ color }} />
                   <div className="text-3xl font-extrabold text-[#0A1F44] mb-1">
                     <AnimatedCounter to={value} suffix={suffix} />
                   </div>
-                  <div className="text-sm text-[#64748B]">{label}</div>
+                  <div className="text-sm text-[#64748B]">{t(labelKey)}</div>
                 </div>
               </RevealOnScroll>
             ))}
@@ -100,24 +92,24 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                badge: 'Misión',
-                title: 'Lo que hacemos hoy',
+                badgeKey: 'about.mission.badge',
+                titleKey: 'about.mission.title',
+                textKey: 'about.mission.text',
                 color: '#33FF00',
-                text: 'Transformar comunidades vulnerables a través de programas de seguridad alimentaria y formación musical, promoviendo la dignidad humana, el desarrollo integral y la esperanza como pilares de un cambio social sostenible.',
               },
               {
-                badge: 'Visión',
-                title: 'Lo que construimos mañana',
+                badgeKey: 'about.vision.badge',
+                titleKey: 'about.vision.title',
+                textKey: 'about.vision.text',
                 color: '#A78BFA',
-                text: 'Ser la organización líder en transformación social comunitaria del norte de México, reconocida por su impacto medible, su modelo de intervención integral y su capacidad de replicar el cambio en cada comunidad que toca.',
               },
-            ].map(({ badge, title, color, text }) => (
-              <RevealOnScroll key={badge}>
+            ].map(({ badgeKey, titleKey, textKey, color }) => (
+              <RevealOnScroll key={badgeKey}>
                 <div className="bg-white rounded-3xl p-8 border border-[#E2E8F0] h-full">
                   <div className="w-2 h-8 rounded-full mb-5" style={{ background: color }} />
-                  <div className="text-xs font-semibold tracking-widest uppercase mb-2" style={{ color }}>{badge}</div>
-                  <h3 className="text-2xl font-extrabold text-[#0A1F44] mb-4">{title}</h3>
-                  <p className="text-[#475569] leading-relaxed">{text}</p>
+                  <div className="text-xs font-semibold tracking-widest uppercase mb-2" style={{ color }}>{t(badgeKey)}</div>
+                  <h3 className="text-2xl font-extrabold text-[#0A1F44] mb-4">{t(titleKey)}</h3>
+                  <p className="text-[#475569] leading-relaxed">{t(textKey)}</p>
                 </div>
               </RevealOnScroll>
             ))}
@@ -130,9 +122,9 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <RevealOnScroll>
-              <SectionBadge color="lime" className="mb-4">Historia</SectionBadge>
+              <SectionBadge color="lime" className="mb-4">{t('about.timeline.badge')}</SectionBadge>
               <h2 className="text-4xl font-extrabold text-[#0A1F44] mt-2">
-                Nuestro <span className="gradient-text-lime">camino</span>
+                {t('about.timeline.title')} <span className="gradient-text-lime">{t('about.timeline.titleAccent')}</span>
               </h2>
             </RevealOnScroll>
           </div>
@@ -171,15 +163,15 @@ export default function About() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <RevealOnScroll>
-              <SectionBadge color="lime" className="mb-4">Equipo</SectionBadge>
+              <SectionBadge color="lime" className="mb-4">{t('about.team.badge')}</SectionBadge>
               <h2 className="text-4xl font-extrabold text-[#0A1F44] mt-2">
-                Las personas <span className="gradient-text-lime">detrás de la misión</span>
+                {t('about.team.title')} <span className="gradient-text-lime">{t('about.team.titleAccent')}</span>
               </h2>
             </RevealOnScroll>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {team.map(({ name, initials, color, desc }, i) => (
-              <RevealOnScroll key={name} delay={i * 0.1}>
+            {team.map(({ role, initials, color, desc }, i) => (
+              <RevealOnScroll key={role} delay={i * 0.1}>
                 <div className="bg-white rounded-2xl p-6 text-center border border-[#E2E8F0] hover-lift">
                   <div
                     className="w-16 h-16 rounded-2xl flex items-center justify-center font-bold text-white text-lg mx-auto mb-4"
@@ -187,7 +179,7 @@ export default function About() {
                   >
                     {initials}
                   </div>
-                  <div className="font-bold text-[#0A1F44] text-sm mb-1">{name}</div>
+                  <div className="font-bold text-[#0A1F44] text-sm mb-1">{role}</div>
                   <div className="text-xs text-[#64748B]">{desc}</div>
                 </div>
               </RevealOnScroll>
@@ -201,18 +193,15 @@ export default function About() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <RevealOnScroll>
             <h2 className="text-4xl font-extrabold text-white mb-4">
-              Sé parte de la <span className="gradient-text-lime">historia</span>
+              {t('about.cta.title')} <span className="gradient-text-lime">{t('about.cta.titleAccent')}</span>
             </h2>
-            <p className="text-white/60 text-lg mb-8">
-              Ya sea donando, siendo voluntario o difundiendo nuestra misión,
-              hay un lugar para ti en Armonizando Vidas.
-            </p>
+            <p className="text-white/60 text-lg mb-8">{t('about.cta.subtitle')}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to={PATHS.DONATE} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#33FF00] text-[#0A1F44] font-bold hover:bg-[#2ae600] transition-all hover:scale-105 shadow-[0_0_20px_rgba(51,255,0,0.2)]">
-                <Heart size={18} /> Donar Ahora
+                <Heart size={18} /> {t('about.cta.donate')}
               </Link>
               <Link to={PATHS.VOLUNTEER} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-white/20 text-white hover:bg-white/8 transition-all">
-                <Users size={18} /> Ser Voluntario <ArrowRight size={14} />
+                <Users size={18} /> {t('about.cta.volunteer')} <ArrowRight size={14} />
               </Link>
             </div>
           </RevealOnScroll>
@@ -221,4 +210,3 @@ export default function About() {
     </>
   );
 }
-

@@ -127,5 +127,620 @@
     "privacy": "Privacidad",
     "terms": "Términos",
     "transparency": "Transparencia"
+  },
+  "about": {
+    "seo": {
+      "title": "Nosotros",
+      "description": "Conoce la historia, misión, visión y equipo de Armonizando Vidas A.B.P. Una organización comprometida con el impacto social real."
+    },
+    "hero": {
+      "badge": "Quiénes Somos",
+      "title": "Una organización con",
+      "titleAccent": "propósito real",
+      "subtitle": "Somos Armonizando Vidas A.B.P., una asociación civil que cree en el poder transformador del alimento, la música y la comunidad."
+    },
+    "storyBand": {
+      "badge": "Lo que nos mueve",
+      "title": "Acompañamos procesos,",
+      "accent": "no solo momentos",
+      "description": "Nuestro trabajo empieza con una necesidad concreta, pero crece cuando una familia encuentra una red, un niño descubre una disciplina artística y una comunidad vuelve a sentirse acompañada.",
+      "imageAlt": "Voluntarios trabajando juntos en una jornada comunitaria",
+      "items": [
+        "Diseñamos programas que combinan ayuda inmediata con seguimiento humano.",
+        "Cada alianza, donativo y hora de voluntariado se integra a una estrategia de impacto.",
+        "Medimos resultados para crecer con responsabilidad y servir mejor a cada comunidad."
+      ]
+    },
+    "stats": {
+      "families": "Familias/mes",
+      "musicians": "Músicos",
+      "years": "Años",
+      "communities": "Comunidades"
+    },
+    "mission": {
+      "badge": "Misión",
+      "title": "Lo que hacemos hoy",
+      "text": "Transformar comunidades vulnerables a través de programas de seguridad alimentaria y formación musical, promoviendo la dignidad humana, el desarrollo integral y la esperanza como pilares de un cambio social sostenible."
+    },
+    "vision": {
+      "badge": "Visión",
+      "title": "Lo que construimos mañana",
+      "text": "Ser la organización líder en transformación social comunitaria del norte de México, reconocida por su impacto medible, su modelo de intervención integral y su capacidad de replicar el cambio en cada comunidad que toca."
+    },
+    "timeline": {
+      "badge": "Historia",
+      "title": "Nuestro",
+      "titleAccent": "camino",
+      "milestones": [
+        { "year": "2019", "title": "Fundación", "desc": "Armonizando Vidas nace con una misión clara: transformar vidas desde las bases." },
+        { "year": "2020", "title": "Banco de Alimentos", "desc": "Lanzamos el programa de Banco de Alimentos en plena pandemia, llegando a 100 familias." },
+        { "year": "2021", "title": "Expansión comunitaria", "desc": "Crecemos a 5 comunidades y triplicamos el número de familias beneficiadas." },
+        { "year": "2022", "title": "Orquestas del Rey", "desc": "Nace el programa musical con 40 niños y jóvenes en su primera generación." },
+        { "year": "2023", "title": "Reconocimiento oficial", "desc": "Obtenemos registro como A.B.P. y reconocimientos por nuestro impacto social." },
+        { "year": "2024", "title": "Escala nacional", "desc": "Superamos 500 familias mensuales y 150 músicos activos en 6 ensambles." }
+      ]
+    },
+    "team": {
+      "badge": "Equipo",
+      "title": "Las personas",
+      "titleAccent": "detrás de la misión",
+      "members": [
+        { "role": "Fundadora & Directora", "desc": "Visionaria y corazón del movimiento." },
+        { "role": "Director Banco Alimentos", "desc": "Coordinando operaciones y logística." },
+        { "role": "Director Musical", "desc": "Formando músicos y transformando vidas." },
+        { "role": "Coordinadora Voluntarios", "desc": "Construyendo comunidad y liderazgo." }
+      ]
+    },
+    "cta": {
+      "title": "Sé parte de la",
+      "titleAccent": "historia",
+      "subtitle": "Ya sea donando, siendo voluntario o difundiendo nuestra misión, hay un lugar para ti en Armonizando Vidas.",
+      "donate": "Donar Ahora",
+      "volunteer": "Ser Voluntario"
+    }
+  },
+  "contact": {
+    "seo": {
+      "title": "Contacto",
+      "description": "Contáctanos en Armonizando Vidas A.B.P. Estamos aquí para escucharte y responderte."
+    },
+    "hero": {
+      "badge": "Contáctanos",
+      "title": "Estamos aquí para",
+      "titleAccent": "escucharte",
+      "subtitle": "Cuéntanos cómo puedes sumarte a nuestra misión o cómo podemos ayudarte."
+    },
+    "storyBand": {
+      "badge": "Hablemos",
+      "title": "Las mejores alianzas empiezan con",
+      "accent": "una conversación",
+      "description": "Si quieres donar, sumarte como voluntario, proponer una alianza o conocer más sobre nuestros programas, este es el mejor punto de partida.",
+      "imageAlt": "Personas conversando y estrechando manos para iniciar una colaboración",
+      "items": [
+        "Respondemos mensajes sobre donaciones, voluntariado, visitas y colaboraciones institucionales.",
+        "También podemos orientar a empresas que desean realizar campañas de acopio o patrocinio.",
+        "Cuéntanos tu idea con detalle para dirigirla al equipo correcto desde el primer contacto."
+      ]
+    },
+    "info": {
+      "title": "Información de contacto",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "location": "Ubicación",
+      "hours": "Horario de atención",
+      "hoursValue": "Lunes a Viernes 9:00 — 18:00",
+      "social": "Síguenos en redes"
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "messagePlaceholder": "Escribe tu mensaje aquí...",
+      "send": "Enviar mensaje",
+      "subjects": {
+        "volunteer": "Voluntariado",
+        "donations": "Donaciones",
+        "partnerships": "Alianzas y patrocinios",
+        "foodBank": "Banco de Alimentos",
+        "orchestra": "Orquestas del Rey",
+        "other": "Otro"
+      }
+    }
+  },
+  "donate": {
+    "seo": {
+      "title": "Donar",
+      "description": "Haz una donación a Armonizando Vidas A.B.P. y transforma vidas reales. Apoya el Banco de Alimentos y las Orquestas del Rey."
+    },
+    "hero": {
+      "badge": "Haz la diferencia",
+      "title": "Tu donación",
+      "titleAccent": "transforma vidas",
+      "subtitle": "Cada peso que donas llega directo a familias que lo necesitan."
+    },
+    "storyBand": {
+      "badge": "Donar con claridad",
+      "title": "Cada aportación se convierte en",
+      "accent": "acción concreta",
+      "description": "Tu donación sostiene rutas de distribución, material pedagógico, acompañamiento comunitario y las manos voluntarias que mantienen vivos los programas.",
+      "imageAlt": "Voluntarios organizando alimentos para entregar a familias",
+      "items": [
+        "Puedes elegir si tu apoyo va al fondo general, al Banco de Alimentos o a Orquestas del Rey.",
+        "Priorizamos necesidades urgentes sin perder de vista el impacto a largo plazo.",
+        "Cada campaña se documenta para que puedas ver cómo avanza la misión."
+      ]
+    },
+    "form": {
+      "title": "Realizar donación",
+      "destination": "Destinar a",
+      "general": "General",
+      "bank": "Banco",
+      "orchestra": "Orquesta",
+      "amount": "Elige un monto",
+      "otherAmount": "Otro monto",
+      "name": "Nombre completo",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo electrónico",
+      "phone": "Teléfono (opcional)",
+      "submit": "Completar donación — ${{amount}}",
+      "secure": "Pago seguro con cifrado SSL"
+    },
+    "impact": {
+      "title": "¿Qué logra tu donación?",
+      "200": "Proporciona una despensa completa para una familia.",
+      "500": "Alimenta a 5 familias durante una semana.",
+      "1000": "Cubre materiales musicales de un niño por un mes.",
+      "2500": "Financia el transporte de voluntarios por un mes.",
+      "benefits": [
+        { "title": "Transparencia total", "desc": "El 90% de cada donación va directo a los programas. El 10% cubre costos operativos." },
+        { "title": "Recibo de donataria", "desc": "Emitimos recibo oficial para deducción de impuestos." },
+        { "title": "Reporte de impacto", "desc": "Recibirás un reporte mensual de cómo se usó tu donación." }
+      ]
+    }
+  },
+  "volunteer": {
+    "seo": {
+      "title": "Voluntariado",
+      "description": "Únete como voluntario a Armonizando Vidas A.B.P. Tu tiempo y talento transforman comunidades."
+    },
+    "hero": {
+      "badge": "Únete al equipo",
+      "title": "Sé parte del",
+      "titleAccent": "cambio",
+      "subtitle": "Tu tiempo y talento son el motor que hace posible nuestra misión. Hay un lugar para ti."
+    },
+    "storyBand": {
+      "badge": "Voluntariado con propósito",
+      "title": "Tu tiempo también puede",
+      "accent": "multiplicar esperanza",
+      "description": "Buscamos personas que quieran servir con constancia, sensibilidad y alegría. Hay tareas visibles y tareas silenciosas, pero todas sostienen el mismo resultado: familias y jóvenes con más oportunidades.",
+      "imageAlt": "Equipo de voluntarios compartiendo una jornada con la comunidad",
+      "items": [
+        "Puedes integrarte en jornadas de alimento, clases, logística, comunicación o eventos.",
+        "Acompañamos a los voluntarios para que encuentren una forma realista de participar.",
+        "Cada persona suma desde sus talentos: organización, escucha, enseñanza, transporte o creatividad."
+      ]
+    },
+    "why": {
+      "badge": "¿Por qué ser voluntario?",
+      "title": "Más que ayudar,",
+      "titleAccent": "transformarte",
+      "items": [
+        { "title": "Impacto real y visible", "desc": "Ves directamente cómo tu trabajo cambia vidas. No es abstracto, es tangible." },
+        { "title": "Comunidad genuina", "desc": "Te unes a un equipo apasionado y comprometido que se vuelve familia." },
+        { "title": "Desarrollo personal", "desc": "Desarrollas habilidades de liderazgo, empatía y trabajo en equipo." },
+        { "title": "Red de contactos", "desc": "Conectas con profesionales, instituciones y organizaciones aliadas." },
+        { "title": "Certificación", "desc": "Emitimos constancias de voluntariado para currículum o servicio social." },
+        { "title": "Experiencias únicas", "desc": "Participas en conciertos, eventos y actividades que no olvidarás." }
+      ]
+    },
+    "roles": {
+      "badge": "Áreas de voluntariado",
+      "title": "Encuentra tu",
+      "titleAccent": "lugar",
+      "items": [
+        { "title": "Banco de Alimentos", "desc": "Ayuda en la recepción, clasificación y distribución de alimentos.", "commitment": "4 hrs/semana" },
+        { "title": "Apoyo Musical", "desc": "Si tocas un instrumento, únete como instructor o asistente.", "commitment": "3 hrs/semana" },
+        { "title": "Área Técnica", "desc": "Diseño, tecnología, marketing o logística para los programas.", "commitment": "Flexible" },
+        { "title": "Trabajo Comunitario", "desc": "Visitas comunitarias, talleres y eventos de impacto social.", "commitment": "2 eventos/mes" }
+      ]
+    },
+    "form": {
+      "badge": "Registro",
+      "title": "¡Quiero ser",
+      "titleAccent": "voluntario!",
+      "name": "Nombre completo",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@correo.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+52 (81) 0000-0000",
+      "location": "Colonia / Ciudad",
+      "locationPlaceholder": "¿Desde dónde nos escribes?",
+      "area": "Área de interés",
+      "areaDefault": "Selecciona una opción",
+      "motivation": "¿Por qué quieres unirte?",
+      "motivationPlaceholder": "Cuéntanos un poco sobre ti y tus motivaciones...",
+      "submit": "Enviar solicitud"
+    }
+  },
+  "foodBank": {
+    "seo": {
+      "title": "Banco de Alimentos",
+      "description": "El Banco de Alimentos de Armonizando Vidas A.B.P. rescata y distribuye alimentos para familias vulnerables en Nuevo León. Dona o únete como voluntario."
+    },
+    "hero": {
+      "badge": "Programa Social",
+      "title": "Ninguna familia",
+      "titleAccent": "sin alimento",
+      "subtitle": "Rescatamos alimentos, combatimos el desperdicio y llegamos a cientos de familias en situación de vulnerabilidad cada mes.",
+      "ctaDonate": "Donar al Banco",
+      "ctaPrograms": "Ver programas",
+      "stats": {
+        "families": "Familias / mes",
+        "food": "Alimento/mes",
+        "communities": "Comunidades"
+      }
+    },
+    "storyBand": {
+      "badge": "Seguridad alimentaria",
+      "title": "Rescatamos alimento antes de que",
+      "accent": "pierda su oportunidad",
+      "description": "El Banco de Alimentos conecta excedentes en buen estado con familias que los necesitan. La clave está en actuar rápido, cuidar la calidad y distribuir con dignidad.",
+      "imageAlt": "Personas preparando cajas de alimento para distribución",
+      "items": [
+        "Recibimos donaciones de alimentos, productos básicos y recursos para transporte.",
+        "Organizamos jornadas con voluntarios para clasificar, pesar y preparar despensas.",
+        "Priorizamos comunidades donde una despensa puede aliviar presión económica inmediata."
+      ]
+    },
+    "howItWorks": {
+      "badge": "Cómo funciona",
+      "title": "Del rescate a la",
+      "titleAccent": "mesa",
+      "steps": [
+        { "step": "01", "title": "Rescatamos", "desc": "Recibimos donaciones de alimentos de empresas, supermercados y particulares." },
+        { "step": "02", "title": "Clasificamos", "desc": "Nuestro equipo y voluntarios clasifican, pesa y empaquetan los alimentos." },
+        { "step": "03", "title": "Distribuimos", "desc": "Llevamos las despensas directamente a las comunidades beneficiadas." },
+        { "step": "04", "title": "Impactamos", "desc": "Más de 500 familias reciben alimento fresco cada mes gracias a este proceso." }
+      ]
+    },
+    "impact": {
+      "badge": "Nuestro Impacto",
+      "title": "Números que",
+      "titleAccent": "hablan",
+      "stats": [
+        { "value": 500, "suffix": "+", "label": "Familias beneficiadas mensualmente" },
+        { "value": 12, "suffix": "T", "label": "Toneladas de alimento distribuidas" },
+        { "value": 10, "suffix": "", "label": "Comunidades activas" },
+        { "value": 3, "suffix": "+", "label": "Años de operación continua" }
+      ]
+    },
+    "cta": {
+      "title": "Tú puedes ser parte de esta cadena",
+      "subtitle": "Dona alimentos, dinero o tu tiempo. Cada aportación alimenta a una familia real.",
+      "donate": "Hacer donación",
+      "volunteer": "Ser voluntario"
+    }
+  },
+  "foodBankDonate": {
+    "seo": {
+      "title": "Donar — Banco de Alimentos",
+      "description": "Dona al Banco de Alimentos de Armonizando Vidas y ayuda a alimentar familias en situación de vulnerabilidad."
+    },
+    "hero": {
+      "badge": "Banco de Alimentos",
+      "title": "Tu donación",
+      "titleAccent": "alimenta vidas",
+      "subtitle": "Cada peso llega directo a las familias."
+    },
+    "storyBand": {
+      "badge": "Tu ayuda en la mesa",
+      "title": "Una despensa puede cambiar",
+      "accent": "la semana de una familia",
+      "description": "Donar al Banco de Alimentos significa apoyar compras complementarias, combustible, empaques, rutas de entrega y alimentos que llegan con cuidado.",
+      "imageAlt": "Entrega de alimentos a una familia",
+      "items": [
+        "Los montos sugeridos están pensados para necesidades reales y fáciles de entender.",
+        "Las donaciones recurrentes nos permiten planear rutas y compras con mayor estabilidad.",
+        "También puedes donar alimentos no perecederos o conectar una empresa aliada."
+      ]
+    },
+    "form": {
+      "title": "Realizar donación",
+      "otherAmount": "Otro monto",
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "submit": "Donar ${{amount}}",
+      "secure": "Pago seguro"
+    },
+    "impact": {
+      "title": "¿Qué logra tu donación?",
+      "items": [
+        { "amount": "$150", "text": "Proporciona alimento básico para una familia por una semana." },
+        { "amount": "$300", "text": "Cubre una despensa completa mensual para una familia." },
+        { "amount": "$600", "text": "Alimenta a dos familias durante todo el mes." },
+        { "amount": "$1,500", "text": "Financia la operación de un punto de distribución por una semana." }
+      ]
+    }
+  },
+  "foodBankPrograms": {
+    "seo": {
+      "title": "Programas — Banco de Alimentos",
+      "description": "Conoce todos los programas del Banco de Alimentos de Armonizando Vidas: despensas familiares, rescate de alimentos y alianzas empresariales."
+    },
+    "hero": {
+      "badge": "Banco de Alimentos",
+      "title": "Nuestros",
+      "titleAccent": "programas",
+      "subtitle": "Múltiples iniciativas que trabajan juntas para garantizar la seguridad alimentaria."
+    },
+    "storyBand": {
+      "badge": "Modelo de atención",
+      "title": "Cada programa responde a",
+      "accent": "una necesidad distinta",
+      "description": "No todas las familias necesitan lo mismo. Por eso combinamos despensas, rescate de alimento fresco, alianzas empresariales y puntos comunitarios de donación.",
+      "imageAlt": "Familia reunida recibiendo apoyo alimentario",
+      "items": [
+        "Las despensas familiares dan estabilidad mensual a hogares priorizados.",
+        "El rescate de frescos reduce desperdicio y mejora la calidad nutricional.",
+        "Las alianzas empresariales hacen posible crecer sin perder control operativo."
+      ]
+    },
+    "list": [
+      {
+        "title": "Despensa Familiar",
+        "desc": "Entrega mensual de despensas básicas a familias en situación de pobreza alimentaria. Cada despensa incluye cereales, legumbres, aceite y productos básicos.",
+        "tags": ["Mensual", "500+ familias", "10 comunidades"]
+      },
+      {
+        "title": "Rescate de Alimentos Frescos",
+        "desc": "Colaboramos con supermercados y restaurantes para rescatar frutas, verduras y alimentos próximos a vencer, distribuyéndolos el mismo día.",
+        "tags": ["Semanal", "Alimentos frescos", "Zero waste"]
+      },
+      {
+        "title": "Donaciones Empresariales",
+        "desc": "Programa de alianzas con empresas que donan productos, servicios o recursos financieros para ampliar nuestra capacidad de distribución.",
+        "tags": ["Alianzas", "Deducción fiscal", "Impacto medible"]
+      },
+      {
+        "title": "Banco Comunitario",
+        "desc": "Habilitamos puntos de recepción de donaciones en colonias, donde los vecinos pueden donar alimentos que serán redistribuidos en la misma comunidad.",
+        "tags": ["Comunitario", "Solidaridad", "Local"]
+      }
+    ]
+  },
+  "orchestra": {
+    "seo": {
+      "title": "Orquestas del Rey",
+      "description": "Orquestas del Rey — programa de formación musical de Armonizando Vidas A.B.P. Transformamos vidas a través del arte, la música y la excelencia."
+    },
+    "hero": {
+      "badge": "Programa Cultural",
+      "title": "El arte que",
+      "titleAccent": "transforma",
+      "titleItalic": "el destino",
+      "subtitle": "Formamos músicos de excelencia desde la infancia, usando la orquesta como herramienta de transformación social, desarrollo humano y esperanza.",
+      "ctaEvents": "Ver próximos eventos",
+      "ctaGallery": "Galería musical",
+      "stats": {
+        "musicians": "Músicos activos",
+        "ensembles": "Ensambles",
+        "concerts": "Conciertos/año"
+      }
+    },
+    "storyBand": {
+      "badge": "Música como camino",
+      "title": "La orquesta enseña mucho más que",
+      "accent": "notas",
+      "description": "Cada ensayo desarrolla disciplina, escucha, memoria, colaboración y confianza. La música se convierte en un espacio seguro donde niñas, niños y jóvenes aprenden a imaginar otro futuro.",
+      "imageAlt": "Orquesta juvenil ensayando con instrumentos de cuerda",
+      "items": [
+        "Las clases combinan técnica individual, práctica grupal y preparación escénica.",
+        "Los conciertos fortalecen autoestima y muestran a la comunidad el talento local.",
+        "Cada instrumento abre una puerta a hábitos de excelencia y pertenencia."
+      ]
+    },
+    "pillars": {
+      "badge": "Metodología",
+      "title": "Cuatro pilares de la",
+      "titleAccent": "transformación",
+      "items": [
+        { "title": "Formación Musical", "desc": "Clases individuales y grupales con maestros certificados que guían a cada alumno en su instrumento." },
+        { "title": "Trabajo en Equipo", "desc": "La orquesta como metáfora de la vida: cooperación, escucha y respeto mutuo en cada ensayo." },
+        { "title": "Excelencia Artística", "desc": "Preparamos a músicos para presentaciones profesionales que generan orgullo y autoestima." },
+        { "title": "Impacto Comunitario", "desc": "Conciertos gratuitos para la comunidad que democratizan el acceso a la música de alta calidad." }
+      ]
+    },
+    "instruments": {
+      "title": "Instrumentos que",
+      "titleAccent": "enseñamos",
+      "list": ["Violín", "Viola", "Chelo", "Contrabajo", "Flauta", "Oboe", "Clarinete", "Trompeta", "Trombón", "Piano", "Percusión", "Guitarra"]
+    },
+    "cta": {
+      "title": "La música no es solo arte,",
+      "titleAccent": "es un camino de vida",
+      "subtitle": "Apoya a los músicos jóvenes de Orquestas del Rey con tu donación o únete como voluntario.",
+      "support": "Apoyar el programa",
+      "events": "Ver conciertos"
+    }
+  },
+  "orchestraEvents": {
+    "seo": {
+      "title": "Eventos — Orquestas del Rey",
+      "description": "Próximos conciertos y eventos de Orquestas del Rey, Armonizando Vidas A.B.P."
+    },
+    "hero": {
+      "title": "Próximos",
+      "titleAccent": "eventos",
+      "subtitle": "Conciertos, masterclasses y presentaciones especiales."
+    },
+    "storyBand": {
+      "badge": "Vivir la música",
+      "title": "Cada concierto es una",
+      "accent": "meta compartida",
+      "description": "Los eventos son el punto donde el esfuerzo del aula se encuentra con la comunidad. Familias, maestros, voluntarios y alumnos celebran juntos un proceso que toma meses de práctica.",
+      "imageAlt": "Presentación musical en vivo con público",
+      "items": [
+        "Los conciertos gratuitos acercan la música a personas que normalmente no tienen acceso.",
+        "Las masterclasses conectan a los estudiantes con músicos y experiencias profesionales.",
+        "Cada presentación ayuda a formar seguridad escénica, disciplina y sentido de equipo."
+      ]
+    },
+    "freeEntry": "Entrada libre",
+    "schedule": "Agendar",
+    "ctaText": "¿Quieres que tu hijo forme parte de la orquesta?",
+    "ctaBtn": "Conocer el proceso de admisión",
+    "events": [
+      {
+        "date": { "day": "14", "month": "Jun", "year": "2026" },
+        "title": "Gran Concierto de Primavera",
+        "venue": "Auditorio San Pedro, Nuevo León",
+        "time": "19:00 hrs",
+        "type": "Concierto",
+        "desc": "Presentación de todos los ensambles de Orquestas del Rey en un espectáculo de música clásica y contemporánea.",
+        "free": true
+      },
+      {
+        "date": { "day": "28", "month": "Jun", "year": "2026" },
+        "title": "Serenata Comunitaria",
+        "venue": "Plaza Pública, Col. Vista Hermosa",
+        "time": "11:00 hrs",
+        "type": "Evento Social",
+        "desc": "Concierto gratuito al aire libre para la comunidad, con música de cuerdas y vientos.",
+        "free": true
+      },
+      {
+        "date": { "day": "12", "month": "Jul", "year": "2026" },
+        "title": "Masterclass con Orquesta Invitada",
+        "venue": "Centro Cultural, Monterrey",
+        "time": "09:00 hrs",
+        "type": "Taller",
+        "desc": "Masterclass intensiva con músicos profesionales de orquesta invitada. Solo para músicos del programa.",
+        "free": false
+      },
+      {
+        "date": { "day": "20", "month": "Sep", "year": "2026" },
+        "title": "Concierto de Fin de Temporada",
+        "venue": "Teatro del ITESM, Monterrey",
+        "time": "18:30 hrs",
+        "type": "Concierto",
+        "desc": "El concierto más importante del año, cierre de temporada con la presentación de nuevos talentos.",
+        "free": true
+      }
+    ]
+  },
+  "orchestraGallery": {
+    "seo": {
+      "title": "Galería — Orquestas del Rey",
+      "description": "Galería fotográfica de Orquestas del Rey: ensayos, conciertos y momentos de transformación musical."
+    },
+    "hero": {
+      "title": "Galería",
+      "titleAccent": "musical",
+      "subtitle": "Imágenes que capturan la magia de la transformación a través del arte."
+    },
+    "storyBand": {
+      "badge": "Memoria musical",
+      "title": "El progreso también se ve en",
+      "accent": "pequeños momentos",
+      "description": "Ensayos, conciertos, primeras presentaciones y miradas de concentración forman parte de una historia que crece con cada alumno.",
+      "imageAlt": "Músico tocando en una presentación",
+      "items": [
+        "La galería muestra el trabajo detrás de escena y los momentos de escenario.",
+        "Cada imagen ayuda a reconocer el esfuerzo constante de estudiantes y maestros.",
+        "También sirve para invitar a nuevas familias y aliados a conocer el programa."
+      ]
+    },
+    "photos": [
+      { "alt": "Ensayo orquestal" },
+      { "alt": "Niños músicos" },
+      { "alt": "Concierto" },
+      { "alt": "Músico solista" },
+      { "alt": "Violinista" },
+      { "alt": "Ensayo de cuerdas" },
+      { "alt": "Notas musicales" },
+      { "alt": "Presentación" }
+    ]
+  },
+  "gallery": {
+    "seo": {
+      "title": "Galería",
+      "description": "Explora la galería de Armonizando Vidas A.B.P. — momentos reales de impacto, familias, música y comunidad."
+    },
+    "categories": {
+      "all": "Todos",
+      "food": "Banco de Alimentos",
+      "orchestra": "Orquestas del Rey",
+      "community": "Comunidad"
+    },
+    "hero": {
+      "badge": "Galería",
+      "title": "Momentos que",
+      "accent": "inspiran",
+      "subtitle": "Fotografías reales de nuestro impacto y nuestra comunidad."
+    },
+    "storyBand": {
+      "badge": "Detrás de cada imagen",
+      "title": "Cada fotografía guarda",
+      "accent": "una historia",
+      "description": "La galería reúne momentos de entrega, aprendizaje, música y comunidad. No son solo registros visuales: son señales de confianza, esfuerzo colectivo y transformación cotidiana.",
+      "imageAlt": "Evento comunitario con personas reunidas",
+      "items": [
+        "Actualizamos esta sección con jornadas, conciertos y actividades especiales.",
+        "Las imágenes ayudan a mostrar transparencia y cercanía con las comunidades.",
+        "Cada categoría permite explorar una parte distinta de la misión."
+      ]
+    }
+  },
+  "galleryPreview": {
+    "badge": "Galería",
+    "title": "Momentos que",
+    "accent": "inspiran",
+    "cta": "Ver galería completa"
+  },
+  "partners": {
+    "badge": "Aliados",
+    "title": "Quienes creen en",
+    "accent": "nuestra misión"
+  },
+  "notFound": {
+    "badge": "Error 404",
+    "title": "Página no encontrada",
+    "subtitle": "Parece que esta página no existe o fue movida. Pero no te preocupes, hay muchas formas de seguir conectado con nuestra misión.",
+    "ctaHome": "Ir al inicio",
+    "ctaContact": "Contactarnos",
+    "linksLabel": "Explorar el sitio"
+  },
+  "testimonials": {
+    "badge": "Historias Reales",
+    "title": "Lo que dicen las",
+    "accent": "familias",
+    "dotLabel": "Testimonio",
+    "items": [
+      {
+        "quote": "Gracias al Banco de Alimentos, mi familia pudo superar un período muy difícil. No solo recibimos alimento, sino también esperanza y dignidad.",
+        "name": "María González",
+        "role": "Beneficiaria, Banco de Alimentos"
+      },
+      {
+        "quote": "Mi hijo entró al programa de Orquestas del Rey a los 9 años. Hoy, a los 14, toca el violín con una disciplina y pasión que jamás imaginé. El programa cambió su vida.",
+        "name": "Roberto Herrera",
+        "role": "Padre de músico, Orquestas del Rey"
+      },
+      {
+        "quote": "Ser voluntario en Armonizando Vidas me enseñó más sobre la vida de lo que cualquier clase podría. Ver el impacto directo de tu trabajo es transformador.",
+        "name": "Sofía Martínez",
+        "role": "Voluntaria desde 2022"
+      },
+      {
+        "quote": "Como empresa, decidimos apoyar a Armonizando Vidas porque vimos de cerca su impacto real. Son transparentes, profesionales y genuinamente comprometidos.",
+        "name": "Carlos Ramírez",
+        "role": "Director, Empresa Patrocinadora"
+      }
+    ]
   }
 }

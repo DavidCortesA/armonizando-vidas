@@ -1,5 +1,6 @@
 import RevealOnScroll from '../../common/RevealOnScroll';
 import SectionBadge from '../../common/SectionBadge';
+import { useTranslation } from 'react-i18next';
 
 const partners = [
   'Gobierno de NL', 'CONACULTA', 'DIF Estatal', 'Fundación FEMSA',
@@ -7,14 +8,16 @@ const partners = [
 ];
 
 export default function PartnersSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-16 bg-[#F8F9FC] border-t border-[#E2E8F0]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <RevealOnScroll>
           <div className="text-center mb-10">
-            <SectionBadge color="lime" className="mb-3">Aliados</SectionBadge>
+            <SectionBadge color="lime" className="mb-3">{t('partners.badge')}</SectionBadge>
             <h2 className="text-2xl font-bold text-[#0A1F44] mt-3">
-              Quienes creen en <span className="gradient-text-lime">nuestra misión</span>
+              {t('partners.title')} <span className="gradient-text-lime">{t('partners.accent')}</span>
             </h2>
           </div>
         </RevealOnScroll>

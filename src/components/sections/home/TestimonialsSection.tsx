@@ -1,69 +1,45 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import RevealOnScroll from '../../common/RevealOnScroll';
 import SectionBadge from '../../common/SectionBadge';
 
-const testimonials = [
-  {
-    quote: 'Gracias al Banco de Alimentos, mi familia pudo superar un período muy difícil. No solo recibimos alimento, sino también esperanza y dignidad.',
-    name: 'María González',
-    role: 'Beneficiaria, Banco de Alimentos',
-    avatar: 'MG',
-    program: 'foodBank',
-    accentColor: '#F59E0B',
-  },
-  {
-    quote: 'Mi hijo entró al programa de Orquestas del Rey a los 9 años. Hoy, a los 14, toca el violín con una disciplina y pasión que jamás imaginé. El programa cambió su vida.',
-    name: 'Roberto Herrera',
-    role: 'Padre de músico, Orquestas del Rey',
-    avatar: 'RH',
-    program: 'orchestra',
-    accentColor: '#A78BFA',
-  },
-  {
-    quote: 'Ser voluntario en Armonizando Vidas me enseñó más sobre la vida de lo que cualquier clase podría. Ver el impacto directo de tu trabajo es transformador.',
-    name: 'Sofía Martínez',
-    role: 'Voluntaria desde 2022',
-    avatar: 'SM',
-    program: 'main',
-    accentColor: '#33FF00',
-  },
-  {
-    quote: 'Como empresa, decidimos apoyar a Armonizando Vidas porque vimos de cerca su impacto real. Son transparentes, profesionales y genuinamente comprometidos.',
-    name: 'Carlos Ramírez',
-    role: 'Director, Empresa Patrocinadora',
-    avatar: 'CR',
-    program: 'main',
-    accentColor: '#38BDF8',
-  },
+const testimonialsMeta = [
+  { avatar: 'MG', accentColor: '#F59E0B' },
+  { avatar: 'RH', accentColor: '#A78BFA' },
+  { avatar: 'SM', accentColor: '#33FF00' },
+  { avatar: 'CR', accentColor: '#38BDF8' },
 ];
 
 export default function TestimonialsSection() {
   const [active, setActive] = useState(0);
+  const { t } = useTranslation();
+
+  const items = t('testimonials.items', { returnObjects: true }) as Array<{ quote: string; name: string; role: string }>;
+  const testimonials = items.map((item, i) => ({ ...testimonialsMeta[i], ...item }));
 
   const prev = () => setActive((a) => (a - 1 + testimonials.length) % testimonials.length);
   const next = () => setActive((a) => (a + 1) % testimonials.length);
 
-  const t = testimonials[active];
+  const current = testimonials[active];
 
   return (
     <section className="section-padding bg-white overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <RevealOnScroll>
-            <SectionBadge color="lime" className="mb-4">Historias Reales</SectionBadge>
+            <SectionBadge color="lime" className="mb-4">{t('testimonials.badge')}</SectionBadge>
           </RevealOnScroll>
           <RevealOnScroll delay={0.1}>
             <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0A1F44]">
-              Lo que dicen las <span className="gradient-text-lime">familias</span>
+              {t('testimonials.title')} <span className="gradient-text-lime">{t('testimonials.accent')}</span>
             </h2>
           </RevealOnScroll>
         </div>
 
         <RevealOnScroll delay={0.2}>
           <div className="relative bg-[#F8F9FC] rounded-3xl p-8 sm:p-12 border border-[#E2E8F0]">
-            {/* Big quote */}
             <Quote size={48} className="absolute top-6 right-8 opacity-6 text-[#0A1F44]" />
 
             <AnimatePresence mode="wait">
@@ -74,26 +50,25 @@ export default function TestimonialsSection() {
                 exit={{ opacity: 0, x: -30 }}
                 transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               >
-                {/* Accent line */}
                 <div
                   className="w-12 h-1 rounded-full mb-8"
-                  style={{ background: t.accentColor }}
+                  style={{ background: current.accentColor }}
                 />
 
                 <blockquote className="text-xl sm:text-2xl text-[#0A1F44] font-medium leading-relaxed mb-8 italic">
-                  "{t.quote}"
+                  "{current.quote}"
                 </blockquote>
 
                 <div className="flex items-center gap-4">
                   <div
                     className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0"
-                    style={{ background: t.accentColor }}
+                    style={{ background: current.accentColor }}
                   >
-                    {t.avatar}
+                    {current.avatar}
                   </div>
                   <div>
-                    <div className="font-bold text-[#0A1F44]">{t.name}</div>
-                    <div className="text-sm text-[#64748B]">{t.role}</div>
+                    <div className="font-bold text-[#0A1F44]">{current.name}</div>
+                    <div className="text-sm text-[#64748B]">{current.role}</div>
                   </div>
                 </div>
               </motion.div>
@@ -111,7 +86,7 @@ export default function TestimonialsSection() {
                       width: i === active ? 24 : 8,
                       background: i === active ? testimonials[i].accentColor : '#CBD5E1',
                     }}
-                    aria-label={`Testimonio ${i + 1}`}
+                    aria-label={`${t('testimonials.dotLabel')} ${i + 1}`}
                   />
                 ))}
               </div>
@@ -133,4 +108,3 @@ export default function TestimonialsSection() {
     </section>
   );
 }
-

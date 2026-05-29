@@ -127,5 +127,620 @@
     "privacy": "Privacy",
     "terms": "Terms",
     "transparency": "Transparency"
+  },
+  "about": {
+    "seo": {
+      "title": "About Us",
+      "description": "Learn about the history, mission, vision, and team of Armonizando Vidas A.B.P. An organization committed to real social impact."
+    },
+    "hero": {
+      "badge": "About Us",
+      "title": "An organization with",
+      "titleAccent": "real purpose",
+      "subtitle": "We are Armonizando Vidas A.B.P., a civil association that believes in the transforming power of food, music, and community."
+    },
+    "storyBand": {
+      "badge": "What drives us",
+      "title": "We accompany processes,",
+      "accent": "not just moments",
+      "description": "Our work starts with a concrete need, but grows when a family finds a network, a child discovers an artistic discipline, and a community feels supported again.",
+      "imageAlt": "Volunteers working together in a community day",
+      "items": [
+        "We design programs that combine immediate aid with human follow-up.",
+        "Every partnership, donation, and volunteer hour is integrated into an impact strategy.",
+        "We measure results to grow responsibly and serve each community better."
+      ]
+    },
+    "stats": {
+      "families": "Families/month",
+      "musicians": "Musicians",
+      "years": "Years",
+      "communities": "Communities"
+    },
+    "mission": {
+      "badge": "Mission",
+      "title": "What we do today",
+      "text": "To transform vulnerable communities through food security programs and musical training, promoting human dignity, integral development, and hope as pillars of sustainable social change."
+    },
+    "vision": {
+      "badge": "Vision",
+      "title": "What we build tomorrow",
+      "text": "To be the leading organization in community social transformation in northern Mexico, recognized for its measurable impact, its integral intervention model, and its capacity to replicate change in every community it touches."
+    },
+    "timeline": {
+      "badge": "History",
+      "title": "Our",
+      "titleAccent": "journey",
+      "milestones": [
+        { "year": "2019", "title": "Foundation", "desc": "Armonizando Vidas was born with a clear mission: transform lives from the ground up." },
+        { "year": "2020", "title": "Food Bank", "desc": "We launched the Food Bank program during the pandemic, reaching 100 families." },
+        { "year": "2021", "title": "Community expansion", "desc": "We grew to 5 communities and tripled the number of families served." },
+        { "year": "2022", "title": "Orquestas del Rey", "desc": "The music program launched with 40 children and youth in its first generation." },
+        { "year": "2023", "title": "Official recognition", "desc": "We obtained registration as A.B.P. and recognition for our social impact." },
+        { "year": "2024", "title": "National scale", "desc": "We surpassed 500 monthly families and 150 active musicians in 6 ensembles." }
+      ]
+    },
+    "team": {
+      "badge": "Team",
+      "title": "The people",
+      "titleAccent": "behind the mission",
+      "members": [
+        { "role": "Founder & Director", "desc": "Visionary and heart of the movement." },
+        { "role": "Food Bank Director", "desc": "Coordinating operations and logistics." },
+        { "role": "Music Director", "desc": "Training musicians and transforming lives." },
+        { "role": "Volunteer Coordinator", "desc": "Building community and leadership." }
+      ]
+    },
+    "cta": {
+      "title": "Be part of the",
+      "titleAccent": "story",
+      "subtitle": "Whether donating, volunteering, or spreading our mission, there is a place for you in Armonizando Vidas.",
+      "donate": "Donate Now",
+      "volunteer": "Volunteer"
+    }
+  },
+  "contact": {
+    "seo": {
+      "title": "Contact",
+      "description": "Contact us at Armonizando Vidas A.B.P. We are here to listen and respond to you."
+    },
+    "hero": {
+      "badge": "Contact Us",
+      "title": "We are here to",
+      "titleAccent": "listen",
+      "subtitle": "Tell us how you can join our mission or how we can help you."
+    },
+    "storyBand": {
+      "badge": "Let's talk",
+      "title": "The best alliances begin with",
+      "accent": "a conversation",
+      "description": "If you want to donate, join as a volunteer, propose a partnership, or learn more about our programs, this is the best starting point.",
+      "imageAlt": "People talking and shaking hands to start a collaboration",
+      "items": [
+        "We respond to messages about donations, volunteering, visits, and institutional collaborations.",
+        "We can also guide companies that want to run food drives or sponsorship campaigns.",
+        "Tell us your idea in detail so we can direct it to the right team from the first contact."
+      ]
+    },
+    "info": {
+      "title": "Contact information",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "hours": "Office hours",
+      "hoursValue": "Monday to Friday 9:00 — 18:00",
+      "social": "Follow us"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "messagePlaceholder": "Write your message here...",
+      "send": "Send message",
+      "subjects": {
+        "volunteer": "Volunteer",
+        "donations": "Donations",
+        "partnerships": "Partnerships and sponsorships",
+        "foodBank": "Food Bank",
+        "orchestra": "Orquestas del Rey",
+        "other": "Other"
+      }
+    }
+  },
+  "donate": {
+    "seo": {
+      "title": "Donate",
+      "description": "Make a donation to Armonizando Vidas A.B.P. and transform real lives. Support the Food Bank and Orquestas del Rey."
+    },
+    "hero": {
+      "badge": "Make a difference",
+      "title": "Your donation",
+      "titleAccent": "transforms lives",
+      "subtitle": "Every peso you donate goes directly to families in need."
+    },
+    "storyBand": {
+      "badge": "Donate with clarity",
+      "title": "Every contribution becomes",
+      "accent": "concrete action",
+      "description": "Your donation supports distribution routes, educational materials, community follow-up, and the volunteer hands that keep programs alive.",
+      "imageAlt": "Volunteers organizing food to deliver to families",
+      "items": [
+        "You can choose if your support goes to the general fund, the Food Bank, or Orquestas del Rey.",
+        "We prioritize urgent needs while keeping the long-term impact in mind.",
+        "Each campaign is documented so you can see how the mission progresses."
+      ]
+    },
+    "form": {
+      "title": "Make a donation",
+      "destination": "Designate to",
+      "general": "General",
+      "bank": "Bank",
+      "orchestra": "Orchestra",
+      "amount": "Choose an amount",
+      "otherAmount": "Other amount",
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "submit": "Complete donation — ${{amount}}",
+      "secure": "Secure payment with SSL encryption"
+    },
+    "impact": {
+      "title": "What does your donation achieve?",
+      "200": "Provides a complete food basket for one family.",
+      "500": "Feeds 5 families for one week.",
+      "1000": "Covers musical materials for one child for one month.",
+      "2500": "Funds volunteer transportation for one month.",
+      "benefits": [
+        { "title": "Full transparency", "desc": "90% of each donation goes directly to programs. 10% covers operational costs." },
+        { "title": "Tax receipt", "desc": "We issue an official receipt for tax deduction." },
+        { "title": "Impact report", "desc": "You will receive a monthly report on how your donation was used." }
+      ]
+    }
+  },
+  "volunteer": {
+    "seo": {
+      "title": "Volunteer",
+      "description": "Join as a volunteer at Armonizando Vidas A.B.P. Your time and talent transform communities."
+    },
+    "hero": {
+      "badge": "Join the team",
+      "title": "Be part of the",
+      "titleAccent": "change",
+      "subtitle": "Your time and talent are the engine that makes our mission possible. There is a place for you."
+    },
+    "storyBand": {
+      "badge": "Purposeful volunteering",
+      "title": "Your time can also",
+      "accent": "multiply hope",
+      "description": "We look for people who want to serve with consistency, sensitivity, and joy. There are visible tasks and silent ones, but all support the same result: families and youth with more opportunities.",
+      "imageAlt": "Team of volunteers sharing a day with the community",
+      "items": [
+        "You can join food drives, classes, logistics, communications, or events.",
+        "We support volunteers in finding a realistic way to participate.",
+        "Everyone contributes from their talents: organization, listening, teaching, transport, or creativity."
+      ]
+    },
+    "why": {
+      "badge": "Why volunteer?",
+      "title": "More than helping,",
+      "titleAccent": "transform yourself",
+      "items": [
+        { "title": "Real, visible impact", "desc": "You directly see how your work changes lives. It's not abstract — it's tangible." },
+        { "title": "Genuine community", "desc": "You join a passionate, committed team that becomes family." },
+        { "title": "Personal growth", "desc": "You develop leadership, empathy, and teamwork skills." },
+        { "title": "Network", "desc": "You connect with professionals, institutions, and partner organizations." },
+        { "title": "Certification", "desc": "We issue volunteer certificates for your résumé or social service." },
+        { "title": "Unique experiences", "desc": "You participate in concerts, events, and activities you will never forget." }
+      ]
+    },
+    "roles": {
+      "badge": "Volunteer areas",
+      "title": "Find your",
+      "titleAccent": "place",
+      "items": [
+        { "title": "Food Bank", "desc": "Help with receiving, sorting, and distributing food.", "commitment": "4 hrs/week" },
+        { "title": "Music Support", "desc": "If you play an instrument, join as an instructor or assistant.", "commitment": "3 hrs/week" },
+        { "title": "Technical Area", "desc": "Design, technology, marketing, or logistics for the programs.", "commitment": "Flexible" },
+        { "title": "Community Work", "desc": "Community visits, workshops, and social impact events.", "commitment": "2 events/month" }
+      ]
+    },
+    "form": {
+      "badge": "Registration",
+      "title": "I want to be a",
+      "titleAccent": "volunteer!",
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+52 (81) 0000-0000",
+      "location": "Neighborhood / City",
+      "locationPlaceholder": "Where are you writing from?",
+      "area": "Area of interest",
+      "areaDefault": "Select an option",
+      "motivation": "Why do you want to join?",
+      "motivationPlaceholder": "Tell us a bit about yourself and your motivations...",
+      "submit": "Submit application"
+    }
+  },
+  "foodBank": {
+    "seo": {
+      "title": "Food Bank",
+      "description": "The Armonizando Vidas A.B.P. Food Bank rescues and distributes food for vulnerable families in Nuevo León. Donate or join as a volunteer."
+    },
+    "hero": {
+      "badge": "Social Program",
+      "title": "No family",
+      "titleAccent": "without food",
+      "subtitle": "We rescue food, fight waste, and reach hundreds of vulnerable families every month.",
+      "ctaDonate": "Donate to the Bank",
+      "ctaPrograms": "See programs",
+      "stats": {
+        "families": "Families / month",
+        "food": "Food/month",
+        "communities": "Communities"
+      }
+    },
+    "storyBand": {
+      "badge": "Food security",
+      "title": "We rescue food before it",
+      "accent": "loses its opportunity",
+      "description": "The Food Bank connects surplus food in good condition with families who need it. The key is to act fast, maintain quality, and distribute with dignity.",
+      "imageAlt": "People preparing food boxes for distribution",
+      "items": [
+        "We receive donations of food, basic products, and transportation resources.",
+        "We organize sessions with volunteers to sort, weigh, and prepare food baskets.",
+        "We prioritize communities where a food basket can relieve immediate economic pressure."
+      ]
+    },
+    "howItWorks": {
+      "badge": "How it works",
+      "title": "From rescue to the",
+      "titleAccent": "table",
+      "steps": [
+        { "step": "01", "title": "We rescue", "desc": "We receive food donations from businesses, supermarkets, and individuals." },
+        { "step": "02", "title": "We sort", "desc": "Our team and volunteers sort, weigh, and package the food." },
+        { "step": "03", "title": "We distribute", "desc": "We deliver the food baskets directly to the communities served." },
+        { "step": "04", "title": "We impact", "desc": "More than 500 families receive fresh food every month thanks to this process." }
+      ]
+    },
+    "impact": {
+      "badge": "Our Impact",
+      "title": "Numbers that",
+      "titleAccent": "speak",
+      "stats": [
+        { "value": 500, "suffix": "+", "label": "Families served monthly" },
+        { "value": 12, "suffix": "T", "label": "Tons of food distributed" },
+        { "value": 10, "suffix": "", "label": "Active communities" },
+        { "value": 3, "suffix": "+", "label": "Years of continuous operation" }
+      ]
+    },
+    "cta": {
+      "title": "You can be part of this chain",
+      "subtitle": "Donate food, money, or your time. Every contribution feeds a real family.",
+      "donate": "Make a donation",
+      "volunteer": "Volunteer"
+    }
+  },
+  "foodBankDonate": {
+    "seo": {
+      "title": "Donate — Food Bank",
+      "description": "Donate to the Armonizando Vidas Food Bank and help feed families in vulnerable situations."
+    },
+    "hero": {
+      "badge": "Food Bank",
+      "title": "Your donation",
+      "titleAccent": "feeds lives",
+      "subtitle": "Every peso goes directly to families."
+    },
+    "storyBand": {
+      "badge": "Your help at the table",
+      "title": "A food basket can change",
+      "accent": "a family's week",
+      "description": "Donating to the Food Bank means supporting complementary purchases, fuel, packaging, delivery routes, and food that arrives with care.",
+      "imageAlt": "Food delivery to a family",
+      "items": [
+        "The suggested amounts are designed around real needs and easy to understand.",
+        "Recurring donations allow us to plan routes and purchases with greater stability.",
+        "You can also donate non-perishable food or connect a partner company."
+      ]
+    },
+    "form": {
+      "title": "Make a donation",
+      "otherAmount": "Other amount",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "submit": "Donate ${{amount}}",
+      "secure": "Secure payment"
+    },
+    "impact": {
+      "title": "What does your donation achieve?",
+      "items": [
+        { "amount": "$150", "text": "Provides basic food for one family for one week." },
+        { "amount": "$300", "text": "Covers a full monthly food basket for one family." },
+        { "amount": "$600", "text": "Feeds two families for the entire month." },
+        { "amount": "$1,500", "text": "Funds the operation of one distribution point for one week." }
+      ]
+    }
+  },
+  "foodBankPrograms": {
+    "seo": {
+      "title": "Programs — Food Bank",
+      "description": "Learn about all the Food Bank programs at Armonizando Vidas: family baskets, food rescue, and corporate partnerships."
+    },
+    "hero": {
+      "badge": "Food Bank",
+      "title": "Our",
+      "titleAccent": "programs",
+      "subtitle": "Multiple initiatives working together to guarantee food security."
+    },
+    "storyBand": {
+      "badge": "Care model",
+      "title": "Each program responds to",
+      "accent": "a different need",
+      "description": "Not all families need the same thing. That's why we combine food baskets, fresh food rescue, corporate partnerships, and community donation points.",
+      "imageAlt": "Family gathered receiving food support",
+      "items": [
+        "Family food baskets provide monthly stability to prioritized households.",
+        "Fresh food rescue reduces waste and improves nutritional quality.",
+        "Corporate partnerships make it possible to grow without losing operational control."
+      ]
+    },
+    "list": [
+      {
+        "title": "Family Food Basket",
+        "desc": "Monthly delivery of basic food baskets to families in food poverty. Each basket includes grains, legumes, oil, and basic products.",
+        "tags": ["Monthly", "500+ families", "10 communities"]
+      },
+      {
+        "title": "Fresh Food Rescue",
+        "desc": "We partner with supermarkets and restaurants to rescue fruits, vegetables, and near-expiry food, distributing them the same day.",
+        "tags": ["Weekly", "Fresh food", "Zero waste"]
+      },
+      {
+        "title": "Corporate Donations",
+        "desc": "Partnership program with companies that donate products, services, or financial resources to expand our distribution capacity.",
+        "tags": ["Partnerships", "Tax deductible", "Measurable impact"]
+      },
+      {
+        "title": "Community Bank",
+        "desc": "We set up donation reception points in neighborhoods, where residents can donate food to be redistributed within the same community.",
+        "tags": ["Community", "Solidarity", "Local"]
+      }
+    ]
+  },
+  "orchestra": {
+    "seo": {
+      "title": "Orquestas del Rey",
+      "description": "Orquestas del Rey — music training program by Armonizando Vidas A.B.P. We transform lives through art, music, and excellence."
+    },
+    "hero": {
+      "badge": "Cultural Program",
+      "title": "The art that",
+      "titleAccent": "transforms",
+      "titleItalic": "destiny",
+      "subtitle": "We train musicians of excellence from childhood, using the orchestra as a tool for social transformation, human development, and hope.",
+      "ctaEvents": "See upcoming events",
+      "ctaGallery": "Music gallery",
+      "stats": {
+        "musicians": "Active musicians",
+        "ensembles": "Ensembles",
+        "concerts": "Concerts/year"
+      }
+    },
+    "storyBand": {
+      "badge": "Music as a path",
+      "title": "The orchestra teaches much more than",
+      "accent": "notes",
+      "description": "Every rehearsal develops discipline, listening, memory, collaboration, and confidence. Music becomes a safe space where children and youth learn to imagine a different future.",
+      "imageAlt": "Youth orchestra rehearsing with string instruments",
+      "items": [
+        "Classes combine individual technique, group practice, and stage preparation.",
+        "Concerts strengthen self-esteem and show the community local talent.",
+        "Each instrument opens a door to habits of excellence and belonging."
+      ]
+    },
+    "pillars": {
+      "badge": "Methodology",
+      "title": "Four pillars of",
+      "titleAccent": "transformation",
+      "items": [
+        { "title": "Musical Training", "desc": "Individual and group classes with certified teachers who guide each student in their instrument." },
+        { "title": "Teamwork", "desc": "The orchestra as a metaphor for life: cooperation, listening, and mutual respect in every rehearsal." },
+        { "title": "Artistic Excellence", "desc": "We prepare musicians for professional performances that generate pride and self-esteem." },
+        { "title": "Community Impact", "desc": "Free concerts for the community that democratize access to high-quality music." }
+      ]
+    },
+    "instruments": {
+      "title": "Instruments we",
+      "titleAccent": "teach",
+      "list": ["Violin", "Viola", "Cello", "Double Bass", "Flute", "Oboe", "Clarinet", "Trumpet", "Trombone", "Piano", "Percussion", "Guitar"]
+    },
+    "cta": {
+      "title": "Music is not just art,",
+      "titleAccent": "it's a path of life",
+      "subtitle": "Support the young musicians of Orquestas del Rey with your donation or join as a volunteer.",
+      "support": "Support the program",
+      "events": "See concerts"
+    }
+  },
+  "orchestraEvents": {
+    "seo": {
+      "title": "Events — Orquestas del Rey",
+      "description": "Upcoming concerts and events from Orquestas del Rey, Armonizando Vidas A.B.P."
+    },
+    "hero": {
+      "title": "Upcoming",
+      "titleAccent": "events",
+      "subtitle": "Concerts, masterclasses, and special performances."
+    },
+    "storyBand": {
+      "badge": "Living music",
+      "title": "Every concert is a",
+      "accent": "shared goal",
+      "description": "Events are the point where classroom effort meets community. Families, teachers, volunteers, and students celebrate together a process that takes months of practice.",
+      "imageAlt": "Live musical performance with audience",
+      "items": [
+        "Free concerts bring music to people who normally don't have access.",
+        "Masterclasses connect students with professional musicians and experiences.",
+        "Each performance helps build stage confidence, discipline, and team spirit."
+      ]
+    },
+    "freeEntry": "Free entry",
+    "schedule": "Add to calendar",
+    "ctaText": "Do you want your child to be part of the orchestra?",
+    "ctaBtn": "Learn about the admission process",
+    "events": [
+      {
+        "date": { "day": "14", "month": "Jun", "year": "2026" },
+        "title": "Grand Spring Concert",
+        "venue": "Auditorio San Pedro, Nuevo León",
+        "time": "7:00 PM",
+        "type": "Concert",
+        "desc": "Performance by all Orquestas del Rey ensembles in a classical and contemporary music showcase.",
+        "free": true
+      },
+      {
+        "date": { "day": "28", "month": "Jun", "year": "2026" },
+        "title": "Community Serenade",
+        "venue": "Public Square, Col. Vista Hermosa",
+        "time": "11:00 AM",
+        "type": "Social Event",
+        "desc": "Free outdoor concert for the community, featuring string and wind music.",
+        "free": true
+      },
+      {
+        "date": { "day": "12", "month": "Jul", "year": "2026" },
+        "title": "Masterclass with Guest Orchestra",
+        "venue": "Centro Cultural, Monterrey",
+        "time": "9:00 AM",
+        "type": "Workshop",
+        "desc": "Intensive masterclass with professional musicians from a guest orchestra. For program musicians only.",
+        "free": false
+      },
+      {
+        "date": { "day": "20", "month": "Sep", "year": "2026" },
+        "title": "Season Closing Concert",
+        "venue": "Teatro del ITESM, Monterrey",
+        "time": "6:30 PM",
+        "type": "Concert",
+        "desc": "The most important concert of the year, season closing with the presentation of new talent.",
+        "free": true
+      }
+    ]
+  },
+  "orchestraGallery": {
+    "seo": {
+      "title": "Gallery — Orquestas del Rey",
+      "description": "Photo gallery of Orquestas del Rey: rehearsals, concerts, and moments of musical transformation."
+    },
+    "hero": {
+      "title": "Musical",
+      "titleAccent": "gallery",
+      "subtitle": "Images that capture the magic of transformation through art."
+    },
+    "storyBand": {
+      "badge": "Musical memories",
+      "title": "Progress is also visible in",
+      "accent": "small moments",
+      "description": "Rehearsals, concerts, first performances, and looks of concentration are part of a story that grows with each student.",
+      "imageAlt": "Musician playing in a performance",
+      "items": [
+        "The gallery shows behind-the-scenes work and on-stage moments.",
+        "Each image helps recognize the constant effort of students and teachers.",
+        "It also serves to invite new families and allies to discover the program."
+      ]
+    },
+    "photos": [
+      { "alt": "Orchestra rehearsal" },
+      { "alt": "Young musicians" },
+      { "alt": "Concert" },
+      { "alt": "Solo musician" },
+      { "alt": "Violinist" },
+      { "alt": "String rehearsal" },
+      { "alt": "Musical notes" },
+      { "alt": "Performance" }
+    ]
+  },
+  "gallery": {
+    "seo": {
+      "title": "Gallery",
+      "description": "Explore the Armonizando Vidas A.B.P. gallery: real moments of impact, families, music, and community."
+    },
+    "categories": {
+      "all": "All",
+      "food": "Food Bank",
+      "orchestra": "Orquestas del Rey",
+      "community": "Community"
+    },
+    "hero": {
+      "badge": "Gallery",
+      "title": "Moments that",
+      "accent": "inspire",
+      "subtitle": "Real photographs of our impact and our community."
+    },
+    "storyBand": {
+      "badge": "Behind every image",
+      "title": "Every photograph holds",
+      "accent": "a story",
+      "description": "This gallery gathers moments of service, learning, music, and community. They are not just visuals: they are signs of trust, collective effort, and everyday transformation.",
+      "imageAlt": "Community event with people gathered",
+      "items": [
+        "We update this section with service days, concerts, and special activities.",
+        "Images help show transparency and closeness with communities.",
+        "Each category lets you explore a different part of our mission."
+      ]
+    }
+  },
+  "galleryPreview": {
+    "badge": "Gallery",
+    "title": "Moments that",
+    "accent": "inspire",
+    "cta": "View full gallery"
+  },
+  "partners": {
+    "badge": "Allies",
+    "title": "Those who believe in",
+    "accent": "our mission"
+  },
+  "notFound": {
+    "badge": "Error 404",
+    "title": "Page not found",
+    "subtitle": "This page doesn't exist or may have been moved. But don't worry — there are many ways to stay connected with our mission.",
+    "ctaHome": "Go home",
+    "ctaContact": "Contact us",
+    "linksLabel": "Explore the site"
+  },
+  "testimonials": {
+    "badge": "Real Stories",
+    "title": "What",
+    "accent": "families say",
+    "dotLabel": "Testimonial",
+    "items": [
+      {
+        "quote": "Thanks to the Food Bank, my family got through a very difficult season. We received not only food, but also hope and dignity.",
+        "name": "María González",
+        "role": "Beneficiary, Food Bank"
+      },
+      {
+        "quote": "My son joined Orquestas del Rey at age 9. Now at 14, he plays violin with a discipline and passion we never imagined. The program changed his life.",
+        "name": "Roberto Herrera",
+        "role": "Parent of a young musician, Orquestas del Rey"
+      },
+      {
+        "quote": "Volunteering at Armonizando Vidas taught me more about life than any class could. Seeing the direct impact of your work is transformative.",
+        "name": "Sofía Martínez",
+        "role": "Volunteer since 2022"
+      },
+      {
+        "quote": "As a company, we decided to support Armonizando Vidas after seeing their real impact up close. They are transparent, professional, and truly committed.",
+        "name": "Carlos Ramírez",
+        "role": "Director, Partner Company"
+      }
+    ]
   }
 }

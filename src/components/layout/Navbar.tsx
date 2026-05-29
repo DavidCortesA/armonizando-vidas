@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
@@ -80,7 +81,6 @@ export default function Navbar() {
 
   const changeLanguage = (lng: 'es' | 'en') => {
     i18n.changeLanguage(lng);
-    localStorage.setItem('language', lng);
   };
 
   const textColor = isDark || !scrolled ? '#E2E8F0' : theme.navText;
@@ -107,7 +107,7 @@ export default function Navbar() {
                   {brandName}
                 </div>
                 <div className="text-xs opacity-60 leading-tight" style={{ color: isDark || !scrolled ? '#CBD5E1' : theme.navText }}>
-                  {brandSubtitle}
+                  {theme.key === 'foodBank' ? '' : brandSubtitle}
                 </div>
               </div>
             </Link>

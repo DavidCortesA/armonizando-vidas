@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Heart, ShoppingBasket, Music, Shield, CheckCircle2 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import SEOHead from '../components/common/SEOHead';
 import RevealOnScroll from '../components/common/RevealOnScroll';
 import SectionBadge from '../components/common/SectionBadge';
@@ -8,27 +9,30 @@ import ImageStoryBand from '../components/common/ImageStoryBand';
 
 const amounts = [200, 500, 1000, 2500];
 
-const impactMap: Record<number, { icon: typeof Heart; text: string; color: string }> = {
-  200: { icon: ShoppingBasket, text: 'Proporciona una despensa completa para una familia.', color: '#F59E0B' },
-  500: { icon: ShoppingBasket, text: 'Alimenta a 5 familias durante una semana.', color: '#EA580C' },
-  1000: { icon: Music, text: 'Cubre materiales musicales de un niño por un mes.', color: '#A78BFA' },
-  2500: { icon: Heart, text: 'Financia el transporte de voluntarios por un mes.', color: '#33FF00' },
+const impactMeta: Record<number, { icon: typeof Heart; color: string }> = {
+  200: { icon: ShoppingBasket, color: '#F59E0B' },
+  500: { icon: ShoppingBasket, color: '#EA580C' },
+  1000: { icon: Music, color: '#A78BFA' },
+  2500: { icon: Heart, color: '#33FF00' },
 };
 
 export default function Donate() {
+  const { t } = useTranslation();
   const [selected, setSelected] = useState<number>(500);
   const [custom, setCustom] = useState('');
   const [program, setProgram] = useState<'general' | 'foodBank' | 'orchestra'>('general');
 
   const finalAmount = custom ? parseInt(custom) || 0 : selected;
-  const impact = impactMap[finalAmount] || impactMap[500];
+  const meta = impactMeta[finalAmount] || impactMeta[500];
+  const impactText = t(`donate.impact.${finalAmount}`, { defaultValue: t('donate.impact.500') });
+
+  const benefits = t('donate.impact.benefits', { returnObjects: true }) as Array<{ title: string; desc: string }>;
 
   return (
     <>
       <SEOHead
-        title="Donar"
-        description="Haz una donación a Armonizando Vidas A.B.P. y transforma vidas reales. Apoya el Banco de Alimentos y las Orquestas del Rey."
-        keywords="donar, donación, apoyo social, banco de alimentos, orquesta infantil, armonizando vidas"
+        title={t('donate.seo.title')}
+        description={t('donate.seo.description')}
       />
 
       {/* HERO */}
@@ -39,13 +43,13 @@ export default function Donate() {
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-4 text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <SectionBadge color="lime" className="mb-5">Haz la diferencia</SectionBadge>
+            <SectionBadge color="lime" className="mb-5">{t('donate.hero.badge')}</SectionBadge>
             <h1 className="text-5xl sm:text-6xl font-extrabold text-white mb-4">
-              Tu donación{' '}
-              <span className="gradient-text-lime">transforma vidas</span>
+              {t('donate.hero.title')}{' '}
+              <span className="gradient-text-lime">{t('donate.hero.titleAccent')}</span>
             </h1>
             <p className="text-white/65 text-xl max-w-xl mx-auto">
-              Cada peso que donas llega directo a familias que lo necesitan.
+              {t('donate.hero.subtitle')}
             </p>
           </motion.div>
         </div>
@@ -53,17 +57,13 @@ export default function Donate() {
       </section>
 
       <ImageStoryBand
-        badge="Donar con claridad"
-        title="Cada aportación se convierte en"
-        accent="acción concreta"
-        description="Tu donación sostiene rutas de distribución, material pedagógico, acompañamiento comunitario y las manos voluntarias que mantienen vivos los programas."
+        badge={t('donate.storyBand.badge')}
+        title={t('donate.storyBand.title')}
+        accent={t('donate.storyBand.accent')}
+        description={t('donate.storyBand.description')}
         image="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1200&q=80"
-        imageAlt="Voluntarios organizando alimentos para entregar a familias"
-        items={[
-          'Puedes elegir si tu apoyo va al fondo general, al Banco de Alimentos o a Orquestas del Rey.',
-          'Priorizamos necesidades urgentes sin perder de vista el impacto a largo plazo.',
-          'Cada campaña se documenta para que puedas ver cómo avanza la misión.',
-        ]}
+        imageAlt={t('donate.storyBand.imageAlt')}
+        items={t('donate.storyBand.items', { returnObjects: true }) as string[]}
       />
 
       {/* FORM */}
@@ -74,17 +74,17 @@ export default function Donate() {
             {/* Left — Form */}
             <RevealOnScroll direction="left">
               <div className="bg-[#F8F9FC] rounded-3xl p-8 border border-[#E2E8F0]">
-                <h2 className="text-2xl font-extrabold text-[#0A1F44] mb-6">Realizar donación</h2>
+                <h2 className="text-2xl font-extrabold text-[#0A1F44] mb-6">{t('donate.form.title')}</h2>
 
                 {/* Program selector */}
                 <div className="mb-6">
-                  <label className="block text-sm font-semibold text-[#0A1F44] mb-3">Destinar a</label>
+                  <label className="block text-sm font-semibold text-[#0A1F44] mb-3">{t('donate.form.destination')}</label>
                   <div className="grid grid-cols-3 gap-2">
                     {[
-                      { key: 'general', label: 'General', color: '#33FF00' },
-                      { key: 'foodBank', label: 'Banco', color: '#F59E0B' },
-                      { key: 'orchestra', label: 'Orquesta', color: '#A78BFA' },
-                    ].map(({ key, label, color }) => (
+                      { key: 'general', labelKey: 'donate.form.general', color: '#33FF00' },
+                      { key: 'foodBank', labelKey: 'donate.form.bank', color: '#F59E0B' },
+                      { key: 'orchestra', labelKey: 'donate.form.orchestra', color: '#A78BFA' },
+                    ].map(({ key, labelKey, color }) => (
                       <button
                         key={key}
                         onClick={() => setProgram(key as typeof program)}
@@ -93,7 +93,7 @@ export default function Donate() {
                         }`}
                         style={program === key ? { background: color === '#33FF00' ? '#0A1F44' : color } : {}}
                       >
-                        {label}
+                        {t(labelKey)}
                       </button>
                     ))}
                   </div>
@@ -101,7 +101,7 @@ export default function Donate() {
 
                 {/* Amount grid */}
                 <div className="mb-4">
-                  <label className="block text-sm font-semibold text-[#0A1F44] mb-3">Elige un monto</label>
+                  <label className="block text-sm font-semibold text-[#0A1F44] mb-3">{t('donate.form.amount')}</label>
                   <div className="grid grid-cols-2 gap-2 mb-3">
                     {amounts.map((amt) => (
                       <button
@@ -121,7 +121,7 @@ export default function Donate() {
                     <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#64748B] font-semibold">$</span>
                     <input
                       type="number"
-                      placeholder="Otro monto"
+                      placeholder={t('donate.form.otherAmount')}
                       value={custom}
                       onChange={(e) => setCustom(e.target.value)}
                       className="w-full pl-8 pr-4 py-3 rounded-xl border border-[#E2E8F0] bg-white text-[#0A1F44] font-semibold focus:outline-none focus:border-[#0A1F44] transition-colors"
@@ -132,15 +132,15 @@ export default function Donate() {
                 {/* Fields */}
                 <div className="space-y-3 mb-6">
                   {[
-                    { label: 'Nombre completo', placeholder: 'Tu nombre' },
-                    { label: 'Correo electrónico', placeholder: 'tu@correo.com' },
-                    { label: 'Teléfono (opcional)', placeholder: '+52 (81) 0000-0000' },
-                  ].map(({ label, placeholder }) => (
-                    <div key={label}>
-                      <label className="block text-xs font-semibold text-[#64748B] mb-1.5">{label}</label>
+                    { labelKey: 'donate.form.name', placeholderKey: 'donate.form.namePlaceholder' },
+                    { labelKey: 'donate.form.email', placeholderKey: 'donate.form.email' },
+                    { labelKey: 'donate.form.phone', placeholderKey: 'donate.form.phone' },
+                  ].map(({ labelKey, placeholderKey }) => (
+                    <div key={labelKey}>
+                      <label className="block text-xs font-semibold text-[#64748B] mb-1.5">{t(labelKey)}</label>
                       <input
                         type="text"
-                        placeholder={placeholder}
+                        placeholder={t(placeholderKey)}
                         className="w-full px-4 py-3 rounded-xl border border-[#E2E8F0] bg-white text-[#0A1F44] focus:outline-none focus:border-[#0A1F44] transition-colors text-sm"
                       />
                     </div>
@@ -153,12 +153,12 @@ export default function Donate() {
                   className="w-full py-4 rounded-xl bg-[#0A1F44] text-[#33FF00] font-bold text-base flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(10,31,68,0.15)]"
                 >
                   <Heart size={20} />
-                  Completar donación — ${finalAmount.toLocaleString('es-MX')}
+                  {t('donate.form.submit', { amount: finalAmount.toLocaleString('es-MX') })}
                 </motion.button>
 
                 <div className="flex items-center justify-center gap-2 mt-3 text-xs text-[#94A3B8]">
                   <Shield size={13} />
-                  Pago seguro con cifrado SSL
+                  {t('donate.form.secure')}
                 </div>
               </div>
             </RevealOnScroll>
@@ -166,7 +166,7 @@ export default function Donate() {
             {/* Right — Impact */}
             <RevealOnScroll direction="right">
               <div>
-                <h2 className="text-2xl font-extrabold text-[#0A1F44] mb-6">¿Qué logra tu donación?</h2>
+                <h2 className="text-2xl font-extrabold text-[#0A1F44] mb-6">{t('donate.impact.title')}</h2>
 
                 {/* Impact card */}
                 <motion.div
@@ -175,24 +175,20 @@ export default function Donate() {
                   animate={{ opacity: 1, scale: 1 }}
                   className="rounded-2xl p-6 mb-6 border"
                   style={{
-                    background: `${impact.color}10`,
-                    borderColor: `${impact.color}30`,
+                    background: `${meta.color}10`,
+                    borderColor: `${meta.color}30`,
                   }}
                 >
-                  <impact.icon size={28} style={{ color: impact.color }} className="mb-3" />
-                  <div className="text-3xl font-extrabold mb-2" style={{ color: impact.color }}>
+                  <meta.icon size={28} style={{ color: meta.color }} className="mb-3" />
+                  <div className="text-3xl font-extrabold mb-2" style={{ color: meta.color }}>
                     ${finalAmount.toLocaleString('es-MX')}
                   </div>
-                  <p className="text-[#0A1F44] font-medium">{impact.text}</p>
+                  <p className="text-[#0A1F44] font-medium">{impactText}</p>
                 </motion.div>
 
                 {/* Impact list */}
                 <div className="space-y-4">
-                  {[
-                    { title: 'Transparencia total', desc: 'El 90% de cada donación va directo a los programas. El 10% cubre costos operativos.' },
-                    { title: 'Recibo de donataria', desc: 'Emitimos recibo oficial para deducción de impuestos.' },
-                    { title: 'Reporte de impacto', desc: 'Recibirás un reporte mensual de cómo se usó tu donación.' },
-                  ].map(({ title, desc }) => (
+                  {benefits.map(({ title, desc }) => (
                     <div key={title} className="flex gap-3">
                       <CheckCircle2 size={20} className="text-[#33FF00] flex-shrink-0 mt-0.5" />
                       <div>
@@ -211,4 +207,3 @@ export default function Donate() {
     </>
   );
 }
-

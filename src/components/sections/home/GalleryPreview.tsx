@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import RevealOnScroll from '../../common/RevealOnScroll';
 import SectionBadge from '../../common/SectionBadge';
 import { PATHS } from '../../../routes/paths';
@@ -15,17 +16,19 @@ const images = [
 ];
 
 export default function GalleryPreview() {
+  const { t } = useTranslation();
+
   return (
     <section className="section-padding bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
           <div>
             <RevealOnScroll>
-              <SectionBadge color="lime" className="mb-3">Galería</SectionBadge>
+              <SectionBadge color="lime" className="mb-3">{t('galleryPreview.badge')}</SectionBadge>
             </RevealOnScroll>
             <RevealOnScroll delay={0.1}>
               <h2 className="text-4xl font-extrabold text-[#0A1F44]">
-                Momentos que <span className="gradient-text-lime">inspiran</span>
+                {t('galleryPreview.title')} <span className="gradient-text-lime">{t('galleryPreview.accent')}</span>
               </h2>
             </RevealOnScroll>
           </div>
@@ -34,7 +37,7 @@ export default function GalleryPreview() {
               to={PATHS.GALLERY}
               className="group inline-flex items-center gap-2 text-sm font-semibold text-[#0A1F44] hover:text-[#33FF00] transition-colors"
             >
-              Ver galería completa
+              {t('galleryPreview.cta')}
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </RevealOnScroll>
@@ -64,4 +67,3 @@ export default function GalleryPreview() {
     </section>
   );
 }
-

@@ -23,6 +23,9 @@ import OrchestraHome from '../pages/orchestra/OrchestraHome';
 import OrchestraEvents from '../pages/orchestra/OrchestraEvents';
 import OrchestraGallery from '../pages/orchestra/OrchestraGallery';
 
+/* Other */
+import NotFound from '../pages/NotFound';
+
 export default function AppRouter() {
   return (
     <BrowserRouter>
@@ -49,6 +52,11 @@ export default function AppRouter() {
           <Route path={PATHS.ORCHESTRA} element={<OrchestraHome />} />
           <Route path={PATHS.ORCHESTRA_EVENTS} element={<OrchestraEvents />} />
           <Route path={PATHS.ORCHESTRA_GALLERY} element={<OrchestraGallery />} />
+        </Route>
+
+        {/* 404 */}
+        <Route element={<MainLayout />}>
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
