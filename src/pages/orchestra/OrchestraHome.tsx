@@ -11,6 +11,13 @@ import { PATHS } from '../../routes/paths';
 
 const pillarIcons = [Music, Users, Star, Calendar];
 const pillarColors = ['#A78BFA', '#FCD34D', '#DB2777', '#38BDF8'];
+const starField = Array.from({ length: 20 }, (_, i) => ({
+  top: `${((i * 37) % 80) + 10}%`,
+  left: `${((i * 53) % 90) + 5}%`,
+  opacity: ((i * 17) % 40) / 100 + 0.1,
+  animationDelay: `${((i * 13) % 20) / 10}s`,
+  animationDuration: `${((i * 7) % 20) / 10 + 2}s`,
+}));
 
 export default function OrchestraHome() {
   const { t } = useTranslation();
@@ -35,32 +42,26 @@ export default function OrchestraHome() {
         <div className="absolute bottom-10 right-1/4 w-80 h-80 rounded-full bg-[rgba(29,78,216,0.15)] blur-3xl pointer-events-none" />
         <div className="absolute top-1/2 left-10 w-48 h-48 rounded-full bg-[rgba(252,211,77,0.06)] blur-2xl pointer-events-none" />
 
-        {[...Array(20)].map((_, i) => (
+        {starField.map((star, i) => (
           <div
             key={i}
             className="absolute w-1 h-1 rounded-full bg-white animate-pulse"
-            style={{
-              top: `${Math.random() * 80 + 10}%`,
-              left: `${Math.random() * 90 + 5}%`,
-              opacity: Math.random() * 0.4 + 0.1,
-              animationDelay: `${Math.random() * 2}s`,
-              animationDuration: `${Math.random() * 2 + 2}s`,
-            }}
+            style={star}
           />
         ))}
 
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-36">
-          <div className="max-w-2xl">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-36 lg:pt-32 lg:pb-32">
+          <div className="max-w-3xl lg:max-w-4xl">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }}>
               <SectionBadge color="purple" className="mb-5">{t('orchestra.hero.badge')}</SectionBadge>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-white leading-tight mb-6">
                 {t('orchestra.hero.title')}
                 <br />
                 <span className="gradient-text-gold">{t('orchestra.hero.titleAccent')}</span>
                 <br />
                 <span className="font-display italic text-3xl sm:text-4xl lg:text-5xl text-white/80">{t('orchestra.hero.titleItalic')}</span>
               </h1>
-              <p className="text-white/70 text-lg sm:text-xl leading-relaxed mb-8">
+              <p className="max-w-3xl text-white/70 text-lg sm:text-xl leading-relaxed mb-8">
                 {t('orchestra.hero.subtitle')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -86,7 +87,7 @@ export default function OrchestraHome() {
 
         {/* Stats */}
         <div className="absolute bottom-0 left-0 right-0">
-          <div className="max-w-6xl mx-auto px-4 pb-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

@@ -39,16 +39,16 @@ export default function FoodBankHome() {
           style={{ backgroundImage: `linear-gradient(rgba(255,255,255,.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.6) 1px, transparent 1px)`, backgroundSize: '48px 48px' }}
         />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-36">
-          <div className="max-w-2xl">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-36 lg:pt-32 lg:pb-32">
+          <div className="max-w-3xl lg:max-w-4xl">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
               <SectionBadge color="fire" className="mb-5">{t('foodBank.hero.badge')}</SectionBadge>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-white leading-tight mb-6">
                 {t('foodBank.hero.title')}
                 <br />
                 <span className="gradient-text-fire">{t('foodBank.hero.titleAccent')}</span>
               </h1>
-              <p className="text-white/75 text-lg sm:text-xl leading-relaxed mb-8">
+              <p className="max-w-3xl text-white/75 text-lg sm:text-xl leading-relaxed mb-8">
                 {t('foodBank.hero.subtitle')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -73,7 +73,7 @@ export default function FoodBankHome() {
 
         {/* Stats bar */}
         <div className="absolute bottom-0 left-0 right-0">
-          <div className="max-w-6xl mx-auto px-4 pb-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
