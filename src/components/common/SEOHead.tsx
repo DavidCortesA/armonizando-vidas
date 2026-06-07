@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 interface SEOHeadProps {
   title?: string;
   description?: string;
+  ogDescription?: string;
   keywords?: string;
   image?: string;
   url?: string;
@@ -13,17 +14,18 @@ const SITE_NAME = 'Armonizando Vidas A.B.P.';
 const DEFAULT_URL = 'https://armonizandovidas.org';
 const DEFAULT_IMAGE = `${DEFAULT_URL}/og-image.jpg`;
 const DEFAULT_DESCRIPTION =
-  'Armonizando Vidas A.B.P. — Asociación civil que transforma comunidades a través del Banco de Alimentos y Orquestas del Rey. Dona, sé voluntario y únete a nuestra misión.';
+  'Armonizando Vidas A.B.P. brinda apoyo comunitario, alimento y esperanza a familias en situación vulnerable en Monterrey y Nuevo León.';
 
 export default function SEOHead({
   title,
   description = DEFAULT_DESCRIPTION,
-  keywords = 'asociación civil, banco de alimentos, orquesta infantil, voluntariado, donar, apoyo social, Monterrey, México',
+  ogDescription = description,
+  keywords = 'apoyo comunitario, entrega de despensas, voluntariado, apoyo social, Monterrey, Nuevo León',
   image = DEFAULT_IMAGE,
   url = DEFAULT_URL,
   type = 'website',
 }: SEOHeadProps) {
-  const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} — Transformando comunidades`;
+  const fullTitle = title ?? `${SITE_NAME} — Transformando comunidades`;
 
   return (
     <Helmet>
@@ -37,7 +39,7 @@ export default function SEOHead({
       {/* Open Graph */}
       <meta property="og:type" content={type} />
       <meta property="og:title" content={fullTitle} />
-      <meta property="og:description" content={description} />
+      <meta property="og:description" content={ogDescription} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
       <meta property="og:site_name" content={SITE_NAME} />
@@ -46,7 +48,7 @@ export default function SEOHead({
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:description" content={ogDescription} />
       <meta name="twitter:image" content={image} />
 
       {/* Schema.org */}
@@ -56,8 +58,8 @@ export default function SEOHead({
           '@type': 'NGO',
           name: SITE_NAME,
           url: DEFAULT_URL,
-          logo: `${DEFAULT_URL}/logos/armonizando-vidas-logo.png`,
-          description: DEFAULT_DESCRIPTION,
+          logo: `${DEFAULT_URL}/logos/armonizando-vidas.png`,
+          description,
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'Monterrey',
@@ -66,7 +68,7 @@ export default function SEOHead({
           },
           contactPoint: {
             '@type': 'ContactPoint',
-            email: 'contacto@armonizandovidas.org',
+            email: 'armonizandovidasabp@gmail.com',
             contactType: 'customer service',
           },
         })}

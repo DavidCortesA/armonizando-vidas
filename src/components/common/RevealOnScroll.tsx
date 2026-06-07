@@ -1,5 +1,5 @@
 import { useRef, type ReactNode } from 'react';
-import { motion, useInView } from 'motion/react';
+import { motion, useInView, useReducedMotion } from 'motion/react';
 import type { Variants } from 'motion/react';
 
 interface RevealOnScrollProps {
@@ -21,6 +21,7 @@ export default function RevealOnScroll({
 }: RevealOnScrollProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once, amount });
+  const prefersReducedMotion = useReducedMotion();
 
   const variants: Variants = {
     hidden: {
@@ -41,7 +42,13 @@ export default function RevealOnScroll({
   };
 
   return (
-    <motion.div ref={ref} variants={variants} initial="hidden" animate={isInView ? 'visible' : 'hidden'} className={className}>
+    <motion.div
+      ref={ref}
+      variants={prefersReducedMotion ? undefined : variants}
+      initial={prefersReducedMotion ? false : 'hidden'}
+      animate={prefersReducedMotion ? undefined : isInView ? 'visible' : 'hidden'}
+      className={className}
+    >
       {children}
     </motion.div>
   );

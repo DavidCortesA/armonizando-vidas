@@ -1,5 +1,5 @@
 ﻿import { useEffect, useRef, useState } from 'react';
-import { useInView } from 'motion/react';
+import { useInView, useReducedMotion } from 'motion/react';
 
 interface AnimatedCounterProps {
   to: number;
@@ -22,10 +22,15 @@ export default function AnimatedCounter({
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 });
   const hasAnimated = useRef(false);
+  const prefersReducedMotion = useReducedMotion();
 
   useEffect(() => {
     if (!isInView || hasAnimated.current) return;
     hasAnimated.current = true;
+
+    if (prefersReducedMotion) {
+      return;
+    }
 
     const startTime = performance.now();
     const step = (now: number) => {
@@ -37,12 +42,17 @@ export default function AnimatedCounter({
       if (progress < 1) requestAnimationFrame(step);
     };
     requestAnimationFrame(step);
-  }, [isInView, to, duration, decimals]);
+  }, [isInView, to, duration, decimals, prefersReducedMotion]);
 
   return (
-    <span ref={ref} className={className}>
-      {prefix}{count.toLocaleString('es-MX', { minimumFractionDigits: decimals, maximumFractionDigits: decimals })}{suffix}
+    <span
+      ref={ref}
+      className={className}
+      aria-label={`${prefix}${to.toLocaleString('es-MX')}${suffix}`}
+    >
+      <span aria-hidden="true">
+        {prefix}{(prefersReducedMotion ? to : count).toLocaleString('es-MX', { minimumFractionDigits: decimals, maximumFractionDigits: decimals })}{suffix}
+      </span>
     </span>
   );
 }
-
