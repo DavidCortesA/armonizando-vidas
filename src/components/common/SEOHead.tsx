@@ -6,13 +6,15 @@ interface SEOHeadProps {
   ogDescription?: string;
   keywords?: string;
   image?: string;
+  imageAlt?: string;
   url?: string;
   type?: 'website' | 'article';
 }
 
 const SITE_NAME = 'Armonizando Vidas A.B.P.';
 const DEFAULT_URL = 'https://armonizandovidas.org';
-const DEFAULT_IMAGE = `${DEFAULT_URL}/og-image.jpg`;
+const DEFAULT_IMAGE = `${DEFAULT_URL}/og/armonizando-vidas.png`;
+const DEFAULT_IMAGE_ALT = 'Armonizando Vidas A.B.P., apoyo comunitario en Monterrey y Nuevo León';
 const DEFAULT_DESCRIPTION =
   'Armonizando Vidas A.B.P. brinda apoyo comunitario, alimento y esperanza a familias en situación vulnerable en Monterrey y Nuevo León.';
 
@@ -22,6 +24,7 @@ export default function SEOHead({
   ogDescription = description,
   keywords = 'apoyo comunitario, entrega de despensas, voluntariado, apoyo social, Monterrey, Nuevo León',
   image = DEFAULT_IMAGE,
+  imageAlt = DEFAULT_IMAGE_ALT,
   url = DEFAULT_URL,
   type = 'website',
 }: SEOHeadProps) {
@@ -41,6 +44,11 @@ export default function SEOHead({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={ogDescription} />
       <meta property="og:image" content={image} />
+      <meta property="og:image:secure_url" content={image} />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={imageAlt} />
       <meta property="og:url" content={url} />
       <meta property="og:site_name" content={SITE_NAME} />
       <meta property="og:locale" content="es_MX" />
@@ -50,6 +58,7 @@ export default function SEOHead({
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={ogDescription} />
       <meta name="twitter:image" content={image} />
+      <meta name="twitter:image:alt" content={imageAlt} />
 
       {/* Schema.org */}
       <script type="application/ld+json">

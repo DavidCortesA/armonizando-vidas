@@ -1,0 +1,296 @@
+.bentoContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin: 40px 0;
+  width: 100%;
+  auto-rows: 200px;
+}
+
+.bentoItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #f0f0f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bentoItem:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.bentoItem.bentoLarge {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.bentoItem.bentoWide {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.bentoItem.bentoTall {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.bentoItem.bentoNormal {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.bentoItem:hover .overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bentoItem:hover .icon {
+  opacity: 1;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+.modalContent {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 1001;
+  font-weight: bold;
+  line-height: 1;
+  padding-bottom: 8px;
+}
+
+.closeButton:hover {
+  background: rgba(0, 0, 0, 0.8);
+  border-color: white;
+  transform: scale(1.1);
+}
+
+.closeButton:active {
+  transform: scale(0.95);
+}
+
+.counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  border: 3px solid white;
+  color: white;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 1001;
+  font-weight: bold;
+  padding: 0;
+}
+
+.navButton span {
+  font-size: 60px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prevButton {
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.nextButton {
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+.navButton:hover {
+  background: rgba(0, 0, 0, 0.85);
+  border-color: #ffff00;
+  transform: translateY(-50%) scale(1.15);
+}
+
+.navButton:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .bentoContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    auto-rows: 150px;
+  }
+
+  .bentoItem.bentoLarge {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .bentoItem.bentoWide {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .bentoItem.bentoTall {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .navButton {
+    width: 70px;
+    height: 70px;
+  }
+
+  .navButton span {
+    font-size: 50px;
+  }
+
+  .prevButton {
+    left: 20px;
+  }
+
+  .nextButton {
+    right: 20px;
+  }
+
+  .closeButton {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+    top: 16px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bentoContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    auto-rows: 120px;
+  }
+
+  .bentoItem.bentoLarge {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .bentoItem.bentoWide {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .bentoItem.bentoTall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .modalContent {
+    width: 95%;
+    height: 85%;
+  }
+
+  .navButton {
+    width: 44px;
+    height: 44px;
+    font-size: 28px;
+  }
+
+  .navButton span {
+    font-size: 32px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

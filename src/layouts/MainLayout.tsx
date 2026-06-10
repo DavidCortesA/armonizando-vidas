@@ -1,8 +1,22 @@
-import { Outlet } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
 import Footer from '../components/layout/Footer';
 import Navbar from '../components/layout/Navbar';
 
 export default function MainLayout() {
+  const { hash, pathname } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      window.requestAnimationFrame(() => {
+        document.querySelector(hash)?.scrollIntoView();
+      });
+      return;
+    }
+
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, [hash, pathname]);
+
   return (
     <div className="min-h-screen bg-white">
       <a

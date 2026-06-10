@@ -3,11 +3,11 @@ import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { Heart, Menu, X } from 'lucide-react';
 
 const navItems = [
-  { label: 'Inicio', href: '#inicio' },
-  { label: 'Nosotros', href: '#nosotros' },
-  { label: 'Programas', href: '#programas' },
-  { label: 'Impacto', href: '#impacto' },
-  { label: 'Contacto', href: '#contacto' },
+  { label: 'Inicio', href: '/#inicio' },
+  { label: 'Nosotros', href: '/#nosotros' },
+  { label: 'Programas', href: '/#programas' },
+  { label: 'Impacto', href: '/#impacto' },
+  { label: 'Contacto', href: '/#contacto' },
 ];
 
 export default function Navbar() {
@@ -43,12 +43,14 @@ export default function Navbar() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: prefersReducedMotion ? 0 : 0.55 }}
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'border-b border-line/80 bg-white/90 shadow-[0_8px_30px_rgba(24,48,75,0.06)] backdrop-blur-xl' : 'bg-transparent'
+        scrolled
+          ? 'border-b border-line/80 bg-white/90 shadow-[0_8px_30px_rgba(24,48,75,0.06)] backdrop-blur-xl'
+          : 'bg-white/85 backdrop-blur-xl'
       }`}
     >
       <nav className="page-container flex h-20 items-center justify-between" aria-label="Navegación principal">
-        <a href="#inicio" className="flex items-center gap-3" aria-label="Armonizando Vidas, inicio">
-          <img src="/logos/armonizando-vidas.png" alt="" className="h-12 w-12 object-contain" />
+        <a href="/#inicio" className="flex items-center gap-3" aria-label="Armonizando Vidas, inicio">
+          <img src="/logos/armonizando-vidas.png" alt="" className="header-brand-logo" />
           <div className="leading-none">
             <span className="block text-sm font-extrabold tracking-tight text-ink sm:text-base">Armonizando Vidas</span>
             <span className="mt-1 block text-[10px] font-bold uppercase tracking-[0.2em] text-slate">A.B.P.</span>
@@ -63,7 +65,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <a href="#ayudar" className="button-primary nav-cta !px-5 !py-3">
+        <a href="/#ayudar" className="button-primary nav-cta !px-5 !py-3">
           <Heart size={17} aria-hidden="true" />
           Quiero ayudar
         </a>
@@ -104,7 +106,7 @@ export default function Navbar() {
                   {item.label}
                 </a>
               ))}
-              <a href="#ayudar" onClick={() => setMobileOpen(false)} className="button-primary mt-5">
+              <a href="/#ayudar" onClick={() => setMobileOpen(false)} className="button-primary mt-5">
                 <Heart size={17} aria-hidden="true" />
                 Quiero ayudar
               </a>
