@@ -636,7 +636,7 @@ export default function Home() {
                 </p>
                 <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                   <a
-                    href="https://api.whatsapp.com/send?phone=528117459230&text=Hola%2C%20me%20gustar%C3%ADa%20apoyar%20a%20Armonizando%20Vidas.%20%C2%BFPodr%C3%ADan%20compartirme%20m%C3%A1s%20informaci%C3%B3n%20sobre%20c%C3%B3mo%20puedo%20colaborar%3F%20%C2%A1Gracias%21"
+                    href="https://api.whatsapp.com/send?phone=528125809632&text=Hola%2C%20me%20gustar%C3%ADa%20apoyar%20a%20Armonizando%20Vidas.%20%C2%BFPodr%C3%ADan%20compartirme%20m%C3%A1s%20informaci%C3%B3n%20sobre%20c%C3%B3mo%20puedo%20colaborar%3F%20%C2%A1Gracias%21"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="button-light"

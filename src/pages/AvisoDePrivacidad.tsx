@@ -62,9 +62,9 @@ export default function AvisoDePrivacidad() {
                 64160
               </span>
             </a>
-            <a href="tel:+528129329978" className="privacy-contact">
+            <a href="tel:+528125809632" className="privacy-contact">
               <Phone size={18} aria-hidden="true" />
-              <span>81 29 32 99 78</span>
+              <span>81 25 80 96 32</span>
             </a>
             <a href="mailto:info@armonizandovidas.org" className="privacy-contact">
               <Mail size={18} aria-hidden="true" />
@@ -235,7 +235,7 @@ export default function AvisoDePrivacidad() {
                 .
               </li>
               <li>
-                Teléfono: <a href="tel:+528129329978">81 29 32 99 78</a>.
+                Teléfono: <a href="tel:+528125809632">81 25 80 96 32</a>.
               </li>
               <li>
                 Directamente en el domicilio fiscal indicado al inicio de este aviso, para los
