@@ -2,10 +2,15 @@ import ProgramDetailPage from '../components/programs/ProgramDetailPage';
 import BentoGallery from '../components/programs/BentoGallery';
 
 export default function OrquestasDelRey() {
-  const galleryImages = Array.from({ length: 20 }, (_, i) => ({
-    src: `/images/programs/orq-rey/orq-rey-${String(i + 1).padStart(2, '0')}.jpg`,
-    alt: `Participantes de Orquestas del Rey - Foto ${i + 1}`,
-  }));
+  const galleryImages = Array.from({ length: 20 }, (_, i) => {
+    const fileName = `orq-rey-${String(i + 1).padStart(2, '0')}.jpg`;
+
+    return {
+      src: `/images/programs/orq-rey/${fileName}`,
+      thumbnailSrc: `/images/programs/orq-rey/thumbnails/${fileName}`,
+      alt: `Participantes de Orquestas del Rey - Foto ${i + 1}`,
+    };
+  });
 
   return (
     <>

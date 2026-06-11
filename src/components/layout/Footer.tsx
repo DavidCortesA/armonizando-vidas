@@ -16,10 +16,10 @@ export default function Footer() {
               Apoyo comunitario, alimento y esperanza para familias en situación vulnerable.
             </p>
             <a
-              href="mailto:armonizandovidasabp@gmail.com"
+              href="mailto:contacto@armonizandovidas.org"
               className="mt-1 inline-block text-xs font-semibold text-magenta hover:text-ink"
             >
-              armonizandovidasabp@gmail.com
+              contacto@armonizandovidas.org
             </a>
           </div>
         </div>

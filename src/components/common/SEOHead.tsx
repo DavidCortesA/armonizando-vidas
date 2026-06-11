@@ -77,7 +77,7 @@ export default function SEOHead({
           },
           contactPoint: {
             '@type': 'ContactPoint',
-            email: 'armonizandovidasabp@gmail.com',
+            email: 'contacto@armonizandovidas.org',
             contactType: 'customer service',
           },
         })}

@@ -3,6 +3,7 @@ import styles from './BentoGallery.module.css';
 
 interface GalleryImage {
   src: string;
+  thumbnailSrc: string;
   alt: string;
 }
 
@@ -56,9 +57,11 @@ export default function BentoGallery({ images }: BentoGalleryProps) {
             }}
           >
             <img
-              src={image.src}
+              src={image.thumbnailSrc}
               alt={image.alt}
               className={styles.image}
+              loading="lazy"
+              decoding="async"
             />
             <div className={styles.overlay}>
               <svg className={styles.icon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

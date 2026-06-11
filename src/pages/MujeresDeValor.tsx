@@ -2,10 +2,15 @@ import ProgramDetailPage from '../components/programs/ProgramDetailPage';
 import BentoGalleryMujeresDeValor from '../components/programs/BentoGalleryMujeresDeValor';
 
 export default function MujeresDeValor() {
-  const galleryImages = Array.from({ length: 30 }, (_, i) => ({
-    src: `/images/programs/muj-val/muj-val-${String(i + 1).padStart(2, '0')}.jpg`,
-    alt: `Participantes de Mujeres de Valor - Foto ${i + 1}`,
-  }));
+  const galleryImages = Array.from({ length: 30 }, (_, i) => {
+    const fileName = `muj-val-${String(i + 1).padStart(2, '0')}.jpg`;
+
+    return {
+      src: `/images/programs/muj-val/${fileName}`,
+      thumbnailSrc: `/images/programs/muj-val/thumbnails/${fileName}`,
+      alt: `Participantes de Mujeres de Valor - Foto ${i + 1}`,
+    };
+  });
 
   return (
     <>

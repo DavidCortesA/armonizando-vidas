@@ -649,7 +649,7 @@ export default function Home() {
                     </span>
                   </a>
                   <a
-                    href="mailto:armonizandovidasabp@gmail.com"
+                    href="mailto:contacto@armonizandovidas.org"
                     className="button-outline-light"
                   >
                     <Mail size={19} aria-hidden="true" />
