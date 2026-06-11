@@ -1,5 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
+import AvisoDePrivacidad from '../pages/AvisoDePrivacidad';
 import BancoDeAlimentos from '../pages/BancoDeAlimentos';
 import Home from '../pages/Home';
 import MujeresDeValor from '../pages/MujeresDeValor';
@@ -14,6 +15,7 @@ export default function AppRouter() {
           <Route path="/orquestas-del-rey" element={<OrquestasDelRey />} />
           <Route path="/banco-de-alimentos" element={<BancoDeAlimentos />} />
           <Route path="/mujeres-de-valor" element={<MujeresDeValor />} />
+          <Route path="/aviso-de-privacidad" element={<AvisoDePrivacidad />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

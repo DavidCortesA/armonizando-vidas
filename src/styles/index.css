@@ -691,6 +691,128 @@ main:focus {
   color: var(--magenta);
 }
 
+.privacy-hero {
+  background:
+    radial-gradient(circle at 86% 18%, rgba(163, 18, 121, 0.11), transparent 25rem),
+    linear-gradient(145deg, #fffdf9, #fbf7f0 60%, #eff7f3);
+}
+
+.privacy-title {
+  color: var(--ink);
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.privacy-layout {
+  display: grid;
+  align-items: start;
+  gap: 2.5rem;
+}
+
+.privacy-summary {
+  border-radius: 1.75rem;
+  background: var(--ink);
+  padding: 1.75rem;
+  color: white;
+  box-shadow: 0 20px 50px rgba(24, 48, 75, 0.16);
+}
+
+.privacy-contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.65;
+  transition: color 180ms ease;
+}
+
+.privacy-contact svg {
+  flex: none;
+  margin-top: 0.2rem;
+  color: var(--gold-light);
+}
+
+.privacy-contact:hover {
+  color: white;
+}
+
+.privacy-document {
+  min-width: 0;
+}
+
+.privacy-document section {
+  border-bottom: 1px solid var(--line);
+  padding-block: 0 2.5rem;
+}
+
+.privacy-document section + section {
+  padding-top: 2.5rem;
+}
+
+.privacy-document h2 {
+  color: var(--ink);
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.privacy-document h3 {
+  margin-top: 1.75rem;
+  color: var(--green);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.privacy-document p,
+.privacy-document li {
+  color: var(--slate);
+  font-size: 0.95rem;
+  line-height: 1.85;
+}
+
+.privacy-document p {
+  margin-top: 1rem;
+}
+
+.privacy-document ul,
+.privacy-document ol {
+  margin-top: 1rem;
+  padding-left: 1.4rem;
+}
+
+.privacy-document ul {
+  list-style: disc;
+}
+
+.privacy-document li + li {
+  margin-top: 0.55rem;
+}
+
+.privacy-document a {
+  color: var(--magenta);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.privacy-document a:hover {
+  color: var(--ink);
+}
+
+.privacy-alpha-list {
+  list-style: upper-alpha;
+}
+
+.privacy-update {
+  margin-top: 2.5rem;
+  border-radius: 1rem;
+  background: var(--green-soft);
+  padding: 1rem 1.25rem;
+  color: var(--green);
+  font-size: 0.9rem;
+}
+
 .program-highlights {
   position: sticky;
   top: 7rem;
@@ -953,6 +1075,16 @@ section[id] {
 
   .impact-stat:not(:first-child) {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .privacy-layout {
+    grid-template-columns: minmax(240px, 310px) minmax(0, 1fr);
+    gap: 4rem;
+  }
+
+  .privacy-summary {
+    position: sticky;
+    top: 7rem;
   }
 }
 

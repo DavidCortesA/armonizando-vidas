@@ -24,9 +24,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="text-xs text-slate">
-          © {new Date().getFullYear()} Armonizando Vidas A.B.P. Todos los derechos reservados.
-        </p>
+        <div className="text-xs text-slate">
+          <p>© {new Date().getFullYear()} Armonizando Vidas A.B.P. Todos los derechos reservados.</p>
+          <a
+            href="/aviso-de-privacidad"
+            className="mt-2 inline-block font-bold text-magenta hover:text-ink"
+          >
+            Aviso de privacidad
+          </a>
+        </div>
 
         <a href="/#ayudar" className="inline-flex items-center gap-2 text-sm font-bold text-magenta transition-colors hover:text-ink">
           <Heart size={16} aria-hidden="true" />
